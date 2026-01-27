@@ -1,0 +1,3171 @@
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 0.0.0.0:9090
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: false
+  default-nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+  nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+    - 119.29.29.29
+    - 180.76.76.76
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - router.asus.com
+    - localhost.sec.qq.com
+    - localhost.ptlogin2.qq.com
+    - +.msftconnecttest.com
+tun:
+  enable: true
+  stack: system
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - 114.114.114.114
+    - 180.76.76.76
+    - 119.29.29.29
+    - 223.5.5.5
+    - 8.8.8.8
+    - 8.8.4.4
+    - 1.1.1.1
+    - 1.0.0.1
+proxies:
+  - name: BolVpn**_US_🇺🇸_4
+    type: vmess
+    server: 38.107.234.57
+    port: 80
+    uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /vmess/
+  - name: BolVpn**_IN_🇮🇳_10
+    type: vmess
+    server: 20.193.153.19
+    port: 15834
+    uuid: 39a8c374-76b1-4e90-ab85-85cd9a42ded2
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: BolVpn**_SE_🇸🇪_12
+    type: vmess
+    server: 46.246.126.154
+    port: 443
+    uuid: f2fd0786-1059-4f64-d54e-3f3a568c6c68
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+  - name: BolVpn**_US_🇺🇸_13
+    type: vmess
+    server: 172.234.132.232
+    port: 10001
+    uuid: a6b99c05-8e0a-4f7e-bf7b-e4b9febb9589
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: BolVpn**_RO_🇷🇴_14
+    type: vmess
+    server: 85.204.107.33
+    port: 110
+    uuid: 53e0eda6-2a9e-4a76-bd44-30e509f6350e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: BolVpn**_US_🇺🇸_15
+    type: vmess
+    server: 154.201.76.172
+    port: 20521
+    uuid: 496cec71-a0fd-4f25-bba1-cba9e9d5a52f
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+  - name: BolVpn**_US_🇺🇸_16
+    type: vmess
+    server: 69.63.210.35
+    port: 24943
+    uuid: a89feda9-ec30-48c1-ae6b-1a6f5b573f6b
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /a89feda9-ec30-48c1-ae6b-1a6f5b573f6b-vm
+      headers:
+        Host: www.bing.com
+  - name: BolVpn**_US_🇺🇸_17
+    type: vmess
+    server: 209.126.84.189
+    port: 443
+    uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: 209.126.84.189
+  - name: BolVpn__28
+    type: vmess
+    server: chatgpt.com
+    port: 2083
+    uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: hgtrojan.zabc.net
+    network: ws
+    ws-opts:
+      path: /e6395c20
+      headers:
+        Host: hgtrojan.zabc.net
+  - name: BolVpn_🇨🇦_36
+    type: vmess
+    server: 15.235.83.228
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    network: ws
+    ws-opts:
+      path: /linkvws
+  - name: BolVpn_🇨🇦_39
+    type: vmess
+    server: 15.235.83.227
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    network: ws
+    ws-opts:
+      path: /linkvws
+      headers:
+        Host: mankadmu.com
+  - name: BolVpn_🇨🇦_41
+    type: vmess
+    server: 15.235.83.228
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: lammaland.org
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: lammaland.org
+  - name: BolVpn_🇨🇦_42
+    type: vmess
+    server: 15.235.41.200
+    port: 80
+    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /IOebhLMhl1CTbFHbL95myfRX2
+  - name: BolVpn_🇫🇷_48
+    type: vmess
+    server: 91.134.8.88
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: lammaland.org
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: lammaland.org
+  - name: BolVpn_🇫🇷_49
+    type: vmess
+    server: 57.128.189.222
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: lammaland.org
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: lammaland.org
+  - name: BolVpn_🇨🇦_50
+    type: vmess
+    server: 134.195.198.147
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /linkvws
+      headers:
+        Host: inna.cfd
+  - name: BolVpn_🇫🇷_52
+    type: vmess
+    server: 57.129.59.201
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: kampong.org
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: kampong.org
+  - name: BolVpn_🇫🇷_53
+    type: vmess
+    server: 57.129.59.193
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: serkat.org
+    network: ws
+    ws-opts:
+      path: /linkvws
+      headers:
+        Host: serkat.org/?Join----JKVPN---Join----JKVPN----Join----JKVPN----Join----JKVPN
+  - name: BolVpn_🇨🇦_54
+    type: vmess
+    server: 148.113.176.192
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: fapeng.org
+    network: ws
+    ws-opts:
+      path: linkvws
+  - name: BolVpn*_US_🇺🇸_30
+    type: vmess
+    server: 47.251.91.241
+    port: 42899
+    uuid: 0925b355-2bcd-4eae-9720-d2709e4f7e36
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: BolVpn*_CA_🇨🇦_31
+    type: vmess
+    server: 15.235.83.228
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    network: ws
+    ws-opts:
+      path: /linkvws
+  - name: BolVpn*_FR_🇫🇷_35
+    type: vmess
+    server: 57.129.64.238
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: kapelleng.com
+    network: ws
+    ws-opts:
+      path: /linkvws
+      headers:
+        Host: kapelleng.com
+  - name: BolVpn*_FR_🇫🇷_36
+    type: vmess
+    server: 57.129.28.65
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: kapelleng.com
+    network: ws
+    ws-opts:
+      path: /linkvws
+      headers:
+        Host: kapelleng.com
+  - name: BolVpn*_DE_🇩🇪_38
+    type: vmess
+    server: 57.129.24.125
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /linkvws
+      headers:
+        Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  - name: BolVpn*_CA_🇨🇦_39
+    type: vmess
+    server: 15.235.83.228
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: lammaland.org
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: lammaland.org
+  - name: BolVpn*_FR_🇫🇷_49
+    type: vmess
+    server: 57.129.25.20
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 1
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: 57.129.25.20
+  - name: BolVpn*_FR_🇫🇷_58
+    type: vmess
+    server: 57.129.64.238
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: kapelleng.com
+    network: ws
+    ws-opts:
+      path: /linkvws
+      headers:
+        Host: kapelleng.com
+  - name: BolVpn*_FR_🇫🇷_59
+    type: vmess
+    server: 57.129.28.65
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: kapelleng.com
+    network: ws
+    ws-opts:
+      path: /linkvws
+      headers:
+        Host: kapelleng.com
+  - name: BolVpn*_FR_🇫🇷_62
+    type: vmess
+    server: 57.129.25.20
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 1
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: 57.129.25.20
+  - name: BolVpn*_IN_🇮🇳_72
+    type: vmess
+    server: 20.193.153.19
+    port: 15834
+    uuid: 39a8c374-76b1-4e90-ab85-85cd9a42ded2
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: BolVpn*_SE_🇸🇪_73
+    type: vmess
+    server: 46.246.126.154
+    port: 443
+    uuid: f2fd0786-1059-4f64-d54e-3f3a568c6c68
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+  - name: BolVpn**_GB_🇬🇧_20
+    type: ss
+    server: 82.38.31.210
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+  - name: BolVpn_🇫🇷_30
+    type: ss
+    server: 141.95.104.145
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 4f032d993dfec318
+  - name: BolVpn_🇪🇨_35
+    type: ss
+    server: 38.165.231.25
+    port: 990
+    cipher: chacha20-ietf-poly1305
+    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  - name: BolVpn_🇵🇱_38
+    type: ss
+    server: 77.83.245.98
+    port: 2222
+    cipher: chacha20-ietf-poly1305
+    password: qscavF5UviIL-8V-E4raBA
+  - name: BolVpn_🇫🇷_43
+    type: ss
+    server: 135.125.245.131
+    port: 20939
+    cipher: chacha20-ietf-poly1305
+    password: 85d3d8ccba287d3e
+  - name: BolVpn_🇫🇷_57
+    type: ss
+    server: 57.129.69.122
+    port: 27130
+    cipher: chacha20-ietf-poly1305
+    password: a3027c931ae07bce
+  - name: BolVpn*_GB_🇬🇧_4
+    type: ss
+    server: 82.38.31.199
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+  - name: BolVpn*_GB_🇬🇧_5
+    type: ss
+    server: 51.89.119.213
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 15b0573830081d01
+  - name: BolVpn*_FR_🇫🇷_7
+    type: ss
+    server: 57.130.28.148
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 74918bc801d53a4b
+  - name: BolVpn*_FR_🇫🇷_9
+    type: ss
+    server: 57.129.89.142
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 865bc80919a484a5
+  - name: BolVpn*_FR_🇫🇷_10
+    type: ss
+    server: 57.129.95.38
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: f54cdee10f8b25ce
+  - name: BolVpn*_GB_🇬🇧_11
+    type: ss
+    server: 82.38.31.176
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+  - name: BolVpn*_FR_🇫🇷_12
+    type: ss
+    server: 51.68.83.117
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: f19e359a2f0c4f5f
+  - name: BolVpn*_FR_🇫🇷_13
+    type: ss
+    server: 135.125.247.29
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 333c4cae01f8bacf
+  - name: BolVpn*_FR_🇫🇷_20
+    type: ss
+    server: 51.68.146.248
+    port: 10011
+    cipher: chacha20-ietf-poly1305
+    password: a792ff4b517fdf1c
+  - name: BolVpn**_DE_🇩🇪_1
+    type: vless
+    server: 37.120.184.180
+    port: 80
+    uuid: 53fff6cc-b4ec-43e8-ade5-e0c42972fc33
+    network: ws
+    tls: false
+    ws-opts:
+      path: /news
+      headers:
+        Host: cdn.ir
+  - name: BolVpn**_DE_🇩🇪_2
+    type: vless
+    server: 212.192.31.146
+    port: 443
+    uuid: 199a78a5-b4d4-4064-a0db-bb37c5839134
+    network: ws
+    tls: false
+    ws-opts:
+      path: /panika
+  - name: BolVpn**_US_🇺🇸_3
+    type: vless
+    server: chatgpt.com
+    port: 2096
+    uuid: 2e58286f-af86-5710-a2fe-3ddef201d325
+    network: ws
+    servername: df7.SalAR4040.ir
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: df7.SalAR4040.ir
+  - name: BolVpn**_US_🇺🇸_5
+    type: vless
+    server: 15.204.97.154
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVpn**_FR_🇫🇷_6
+    type: vless
+    server: 57.129.49.1
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVpn**_NL_🇳🇱_8
+    type: vless
+    server: 188.114.98.0
+    port: 443
+    uuid: ef8e608b-3edc-4235-8963-b6334f44b88e
+    network: ws
+    servername: uk-02p.allhubb.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /check
+  - name: BolVpn**_NL_🇳🇱_9
+    type: vless
+    server: 188.114.98.0
+    port: 443
+    uuid: 7d9e0e9b-3195-421f-9228-be763906a005
+    network: ws
+    servername: main.shieldpath.ir
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /thisway
+      headers:
+        Host: main.shieldpath.ir
+  - name: BolVpn**_DE_🇩🇪_18
+    type: vless
+    server: 91.107.179.81
+    port: 41647
+    uuid: e50fa46f-20c6-4c0d-fa0e-d9ffd92df36f
+    network: grpc
+    tls: false
+  - name: BolVpn**_DE_🇩🇪_19
+    type: vless
+    server: 91.107.169.78
+    port: 41647
+    uuid: e50fa46f-20c6-4c0d-fa0e-d9ffd92df36f
+    network: grpc
+    tls: false
+  - name: BolVpn**_RU_🇷🇺_21
+    type: vless
+    server: reekc.team-pluss.com
+    port: 80
+    uuid: d75664b9-3135-4ca9-9a77-c1146589c299
+    network: http
+    tls: false
+    http-opts:
+      path: /
+  - name: BolVpn**_FR_🇫🇷_22
+    type: vless
+    server: 109.122.198.223
+    port: 8088
+    uuid: fbe0d38f-5d9c-4d4e-9dbd-8f96584989e0
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+  - name: BolVpn**_US_🇺🇸_23
+    type: vless
+    server: webrtc.chatgpt.com
+    port: 443
+    uuid: 👉👉BanV2ray👈👈
+    network: ws
+    servername: udvsusgsh-272625262626.poshakhowdy.ir
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: udvsusgsh-272625262626.poshakhowdy.ir
+  - name: BolVpn**_US_🇺🇸_24
+    type: vless
+    server: chatgpt.com
+    port: 2096
+    uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
+    network: ws
+    servername: ca.adobe-connect.top
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: ca.adobe-connect.top
+  - name: BolVpn**_RU_🇷🇺_25
+    type: vless
+    server: ru.atlanta-internet.ru
+    port: 8443
+    uuid: 9ed1ff3b-dfe6-478f-95d4-0dcdc512c1bf
+    servername: pingless.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FscaEWx0paNBzL7GWHj4Fll7Xc-KxdhKgTthBAnByWI
+  - name: BolVpn**_US_🇺🇸_26
+    type: vless
+    server: pypi.org
+    port: 80
+    uuid: 6a27158b-fe25-4031-81a0-cee648cde054
+    network: ws
+    tls: false
+    ws-opts:
+      path: /containers/fi
+      headers:
+        Host: ragnarlathbrok.sbs
+  - name: BolVpn**_FR_🇫🇷_27
+    type: vless
+    server: 57.129.53.181
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVpn**_US_🇺🇸_28
+    type: vless
+    server: 15.204.97.160
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVpn**_US_🇺🇸_29
+    type: vless
+    server: 15.204.97.149
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVpn_🇺🇸_1
+    type: vless
+    server: 172.66.40.99
+    port: 8080
+    uuid: 32ee6cfa-a6c2-48ec-b833-b072975c7177
+    network: http
+    tls: false
+    http-opts:
+      path: /
+      headers:
+        Host: www.speedtest.net.tax.gov.ir.aparat.com.a.3.jEy.dPdNs.org.
+  - name: BolVpn__3
+    type: vless
+    server: chatgpt.com
+    port: 443
+    uuid: ef8e608b-3edc-4235-8963-b6334f44b88e
+    network: ws
+    servername: uk-02p.allhubb.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /check
+  - name: BolVpn_🇩🇰_4
+    type: vless
+    server: 95.164.85.109
+    port: 59374
+    uuid: bfc78cd8-5951-4803-8d6c-4cedef8cd420
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ZsswZuBV8bEGQWFrpShCilSytnDUj0kwHFhTSLXzOwc
+      short-id: d21e7c
+  - name: BolVpn_🇷🇺_5
+    type: vless
+    server: 83.222.23.81
+    port: 38065
+    uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+      short-id: fa
+  - name: BolVpn_🇺🇸_6
+    type: vless
+    server: 137.184.218.169
+    port: 36925
+    uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+    servername: www.cloudflare.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
+  - name: BolVpn_🇮🇱_7
+    type: vless
+    server: ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz
+    port: 443
+    uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
+    servername: i2pd.website
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
+      short-id: 55e6af1a35e64a98
+  - name: BolVpn_🇯🇵_8
+    type: vless
+    server: 47.245.38.111
+    port: 443
+    uuid: 86b414b6-966e-4f6d-ab16-32049ef732d3
+    servername: www.autodesk.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: y167aJhpgWWjltY4UCir_uu8Mj__Hkc1W4etD0QXYH4
+      short-id: 860705e716cbe6ed
+  - name: BolVpn_🇺🇸_10
+    type: vless
+    server: 15.204.97.164
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVpn_🇺🇸_11
+    type: vless
+    server: 15.204.97.165
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVpn_🇰🇿_13
+    type: vless
+    server: 109.248.170.119
+    port: 13447
+    uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+      short-id: "83"
+  - name: BolVpn__14
+    type: vless
+    server: 104.18.32.47
+    port: 2053
+    uuid: 062a230c-211d-4569-958d-dddf2c3aa613
+    network: ws
+    servername: ir3uk.airpanel.top
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: ir3uk.airpanel.top
+  - name: BolVpn_🇺🇸_15
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: 1b9d8449-479f-40a0-a326-1a5ea3481c42
+    network: ws
+    servername: ch1.sooot.ir
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: ch1.sooot.ir
+  - name: BolVpn__16
+    type: vless
+    server: 104.17.74.206
+    port: 2086
+    uuid: 902cdea8-75e9-4f61-80d1-48a0ddd3857a
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: tech.narkhesanj.ir
+  - name: BolVpn_🇷🇺_17
+    type: vless
+    server: 77.73.232.61
+    port: 19747
+    uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
+      short-id: "2001"
+  - name: BolVpn_🇷🇺_18
+    type: vless
+    server: 178.236.16.98
+    port: 35728
+    uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+      short-id: 69a2
+  - name: BolVpn_🇸🇬_19
+    type: vless
+    server: 167.172.83.42
+    port: 11441
+    uuid: d7a84b8a-66c3-4b9c-b1b7-d576058c489f
+    network: ws
+    tls: false
+    ws-opts:
+      path: /FREE+By+Tharuwa+(0767597317)
+      headers:
+        Host: zoom.us
+  - name: BolVpn_🇺🇸_20
+    type: vless
+    server: 15.204.97.148
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVpn_🇺🇸_21
+    type: vless
+    server: 15.204.97.155
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVpn__22
+    type: vless
+    server: 104.17.74.206
+    port: 2086
+    uuid: 902cdea8-75e9-4f61-80d1-48a0ddd3857a
+    network: ws
+    tls: false
+    ws-opts:
+      path: /?ed=2056
+      headers:
+        Host: tech.narkhesanj.ir
+  - name: BolVpn_🇦🇹_23
+    type: vless
+    server: 8.6.112.0
+    port: 443
+    uuid: 22e7f0d3-8d3b-40c7-a1c5-8a912f6a16b3
+    network: ws
+    servername: cdn.55994421.xyz
+    tls: true
+    ws-opts:
+      path: /memo
+      headers:
+        Host: cdn.55994421.xyz
+  - name: BolVpn_🇺🇸_24
+    type: vless
+    server: 15.204.97.167
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVpn_🇮🇷_27
+    type: vless
+    server: 185.228.236.237
+    port: 80
+    uuid: 40d28513-d1c3-4346-a480-27601b0650f4
+    network: ws
+    tls: false
+    ws-opts:
+      path: /classgap
+      headers:
+        Host: nginx-08c0f955fd-rule.apps.ir-central1.arvancaas.ir
+  - name: BolVpn_🇺🇸_31
+    type: vless
+    server: lg.tehdrantolidi.ir
+    port: 2095
+    uuid: e927758e-3149-450b-b9a0-45321c946315
+    network: http
+    tls: false
+    http-opts:
+      path: /?ed=2095
+      headers:
+        Host: thntrhnotnho.parsvpskm.fun
+  - name: BolVpn_🇩🇪_32
+    type: vless
+    server: 179.61.132.58
+    port: 32143
+    uuid: d4a0cc8c-2f9c-41fb-a5b8-d60c9a2a347d
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+  - name: BolVpn_🇺🇸_34
+    type: vless
+    server: 15.204.97.172
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVpn__46
+    type: vless
+    server: zzula.ir
+    port: 443
+    uuid: c249ca6f-1bde-479b-af96-da0e948a3800
+    network: ws
+    servername: zitel.digikala-aparat-zula.com
+    tls: true
+    ws-opts:
+      path: /admin
+      headers:
+        Host: zitel.digikala-aparat-zula.com
+  - name: BolVpn_🇷🇺_47
+    type: vless
+    server: 37.139.32.212
+    port: 443
+    uuid: c38e6142-9223-47ef-84ce-2a84a308cafb
+    servername: m.vk.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: 95ec618532fa065e
+  - name: BolVpn_🇺🇸_58
+    type: vless
+    server: 159.89.87.21
+    port: 28190
+    uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
+    servername: aws.amazon.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
+  - name: BolVpn_🇷🇺_61
+    type: vless
+    server: 90.156.217.130
+    port: 8443
+    uuid: 6b5ba45c-3b88-466f-9ca5-3214ce1b1c16
+    servername: m.vk.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: _CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM
+      short-id: f32140952ba18e18
+  - name: BolVpn_🇷🇺_62
+    type: vless
+    server: 95.163.208.119
+    port: 3443
+    uuid: 419ccc44-0a46-4461-a73f-2d6f44fecede
+    servername: yandex.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: WtIKtTEP00B4vCCFxKfzXQo0xAh8iLJpOBMMBgde3Gk
+      short-id: 49ebf5c15a73d430
+  - name: BolVpn_🇺🇸_63
+    type: vless
+    server: 66.163.117.204
+    port: 1422
+    uuid: 59104543-64b9-48dd-9ba9-d2a0825e8b3b
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: q-AEsvnN41Jb8KjFqGEBuSOYjFWXGGhpP9SuS9sBNXg
+      short-id: 3143dc53998d9689
+  - name: BolVpn_🇱🇰_64
+    type: vless
+    server: 87.120.92.149
+    port: 48160
+    uuid: ed8770e9-6100-42a8-bda1-c8e79e4781cc
+    servername: www.refersion.com
+    tls: true
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: iFNLOmzzTvqyq4r7VxaHvd1brNhvEliDGxDLJNEe3wA
+      short-id: b874
+  - name: BolVpn_🇷🇺_66
+    type: vless
+    server: ru01.pugovkabooster.com
+    port: 443
+    uuid: 3cc4c358-1119-4851-9dbd-2356bf5d285c
+    servername: google.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: random
+    reality-opts:
+      public-key: Dcy5P5rKN1GmV2KHVRzWpVmX4hhZDnt4dVUdTBt2Wjs
+  - name: BolVpn__67
+    type: vless
+    server: chatgpt.com
+    port: 2053
+    uuid: 0a60cff5-bb91-49c8-82e1-5716ffaf2949
+    network: ws
+    servername: site.vaslalways.fun
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /eyJqdW5rIjoidDZLaDRBMWhpIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
+      headers:
+        Host: site.vaslalways.fun
+  - name: BolVpn_🇺🇸_68
+    type: vless
+    server: ip.ali.lat
+    port: 2053
+    uuid: c4426a36-247f-4abf-bf4e-e9ea0ed01c32
+    network: ws
+    servername: temp.ali.lat
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: temp.ali.lat
+  - name: BolVpn_🇨🇭_69
+    type: vless
+    server: 195.15.240.204
+    port: 8880
+    uuid: fc872856-d6fb-486e-8388-1082f7cdb469
+    network: ws
+    tls: false
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: /?BIA_TELEGRAM
+  - name: BolVpn_🇨🇭_70
+    type: vless
+    server: 185.18.250.252
+    port: 443
+    uuid: 4c7f6084-ab3c-4515-a69d-fb6f5c0c08ae
+    network: ws
+    servername: market.chepschasb.shop
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /130.162.193.183:15401
+      headers:
+        Host: market.chepschasb.shop
+  - name: BolVpn_🇺🇸_71
+    type: vless
+    server: 198.62.62.3
+    port: 443
+    uuid: 8196d16d-855b-42bc-80f4-b5db138c5572
+    network: http
+    servername: test2.testrobot.site
+    tls: true
+    client-fingerprint: chrome
+    http-opts:
+      path: /randomibash043
+  - name: BolVpn_🇺🇸_72
+    type: vless
+    server: cf2.xuiprospeed.ir
+    port: 2053
+    uuid: 1a326536-99b3-4b1c-86d9-b4bda74bde6b
+    network: ws
+    servername: heritage.xuiprospeed.ir
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: heritage.xuiprospeed.ir
+  - name: BolVpn_🇺🇸_73
+    type: vless
+    server: irani.vidboxco.ir
+    port: 2053
+    uuid: 79df85dd-cb40-4b32-828e-f38d918d85e3
+    network: ws
+    servername: bgp-ip-udp.wizardxray.net
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+  - name: BolVpn_🇷🇺_74
+    type: vless
+    server: 37.139.32.212
+    port: 443
+    uuid: c38e6142-9223-47ef-84ce-2a84a308cafb
+    servername: m.vk.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: c8597fb67d55d9c4
+  - name: BolVpn_🇷🇺_75
+    type: vless
+    server: 37.139.32.212
+    port: 443
+    uuid: c38e6142-9223-47ef-84ce-2a84a308cafb
+    servername: m.vk.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: e55fd8f9c9a9a0ca
+  - name: BolVpn*_US_🇺🇸_1
+    type: vless
+    server: 172.238.111.21
+    port: 11332
+    uuid: ff4edd17-5a4b-41d4-e178-2dd60149b7f1
+    tls: false
+  - name: BolVpn*___2
+    type: vless
+    server: 162.159.152.4
+    port: 443
+    uuid: e4824193-4f54-453b-d037-88368e85ef0e
+    network: grpc
+    servername: pqh30v1.carwashipdir.shop
+    tls: true
+    client-fingerprint: chrome
+  - name: BolVpn*_US_🇺🇸_3
+    type: vless
+    server: nodejs.org
+    port: 80
+    uuid: 546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f
+    network: ws
+    tls: false
+    ws-opts:
+      path: /?ed
+      headers:
+        Host: bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.
+  - name: BolVpn*_FR_🇫🇷_6
+    type: vless
+    server: 57.129.49.1
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVpn*_DK_🇩🇰_14
+    type: vless
+    server: 95.164.85.109
+    port: 59374
+    uuid: bfc78cd8-5951-4803-8d6c-4cedef8cd420
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ZsswZuBV8bEGQWFrpShCilSytnDUj0kwHFhTSLXzOwc
+      short-id: d21e7c
+  - name: BolVpn*_DE_🇩🇪_15
+    type: vless
+    server: 91.107.173.252
+    port: 41647
+    uuid: e50fa46f-20c6-4c0d-fa0e-d9ffd92df36f
+    network: grpc
+    tls: false
+  - name: BolVpn*___19
+    type: vless
+    server: 104.24.17.48
+    port: 2052
+    uuid: d80e27b6-1dee-466a-8b18-8f64bfd66a60
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: vxpor.positivsis.website
+  - name: BolVpn*_US_🇺🇸_21
+    type: vless
+    server: 137.184.218.169
+    port: 36925
+    uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+    servername: www.cloudflare.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
+  - name: BolVpn*_JP_🇯🇵_22
+    type: vless
+    server: 47.245.38.111
+    port: 443
+    uuid: 86b414b6-966e-4f6d-ab16-32049ef732d3
+    servername: www.autodesk.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: y167aJhpgWWjltY4UCir_uu8Mj__Hkc1W4etD0QXYH4
+      short-id: 860705e716cbe6ed
+  - name: BolVpn*_FI_🇫🇮_24
+    type: vless
+    server: 77.91.68.70
+    port: 55983
+    uuid: f667a096-5231-4cfb-8759-92bb32473139
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+      short-id: 0e
+  - name: BolVpn*_US_🇺🇸_25
+    type: vless
+    server: 15.204.97.167
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVpn*___26
+    type: vless
+    server: ping.smartpanel.com.tr
+    port: 2083
+    uuid: 484cc45b-f5bb-44dd-93c8-f75a1b571739
+    network: ws
+    servername: nl-shop.rocketset.fun
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /shop
+  - name: BolVpn*_US_🇺🇸_28
+    type: vless
+    server: 15.204.97.197
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVpn*_US_🇺🇸_33
+    type: vless
+    server: 15.204.97.216
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVpn*_US_🇺🇸_34
+    type: vless
+    server: nodejs.org
+    port: 80
+    uuid: 2a2a8023-3b4b-407d-a00a-7beb5a158148
+    network: ws
+    tls: false
+    ws-opts:
+      path: /?ed
+      headers:
+        Host: SHAggy-AGREEMeNTSpUfz4utdI.SpOrTland.COMPANy.
+  - name: BolVpn*_DE_🇩🇪_37
+    type: vless
+    server: neth.pingxbaz.com
+    port: 443
+    uuid: b3176e0b-ffaf-4e1b-fd8a-c073bcc4272d
+    tls: false
+  - name: BolVpn*___40
+    type: vless
+    server: 104.18.32.47
+    port: 443
+    uuid: 24159510-d3f9-42db-9bb6-a0b43007b552
+    network: ws
+    servername: bupnl.sepotishop.ir
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /api/v2/data
+      headers:
+        Host: bupnl.sepotishop.ir
+  - name: BolVpn*_IR_🇮🇷_41
+    type: vless
+    server: de.hardgaming.top
+    port: 7636
+    uuid: a5806e27-5166-445f-aad0-f5ed2cd5d196
+    tls: false
+  - name: BolVpn*_MX_🇲🇽_42
+    type: vless
+    server: 45.82.251.98
+    port: 8880
+    uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+    network: grpc
+    servername: /?---@Azarbayjab1_Net---@Azarbayjab1_Net---@azarbayjab1_Net---@azarbayjab1_Net---@Azarbayjab1_Net
+    tls: false
+    client-fingerprint: chrome
+  - name: BolVpn*_US_🇺🇸_43
+    type: vless
+    server: nodejs.org
+    port: 80
+    uuid: 3775d133-dc3a-4a02-8095-5c70c328ae9f
+    network: ws
+    tls: false
+    ws-opts:
+      path: /?ed
+      headers:
+        Host: HUge-ActOR48bf36fHJV.ecOTouriSS.co.uK.
+  - name: BolVpn*_KZ_🇰🇿_47
+    type: vless
+    server: 109.248.170.119
+    port: 13447
+    uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+      short-id: "83"
+  - name: BolVpn*___48
+    type: vless
+    server: 104.18.32.47
+    port: 443
+    uuid: fef4a93d-eb4f-4657-b56b-32a0dc060045
+    network: ws
+    servername: dev.twistsparrow.xyz
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: dev.twistsparrow.xyz
+  - name: BolVpn*_US_🇺🇸_50
+    type: vless
+    server: 159.89.87.21
+    port: 28190
+    uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
+    servername: aws.amazon.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
+  - name: BolVpn*_US_🇺🇸_53
+    type: vless
+    server: 172.238.111.21
+    port: 11332
+    uuid: ff4edd17-5a4b-41d4-e178-2dd60149b7f1
+    tls: false
+  - name: BolVpn*_FI_🇫🇮_54
+    type: vless
+    server: 77.91.68.70
+    port: 55983
+    uuid: f667a096-5231-4cfb-8759-92bb32473139
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+      short-id: 0e
+  - name: BolVpn*_US_🇺🇸_55
+    type: vless
+    server: 15.204.97.197
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVpn*_US_🇺🇸_57
+    type: vless
+    server: 15.204.97.216
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVpn*_DE_🇩🇪_60
+    type: vless
+    server: neth.pingxbaz.com
+    port: 443
+    uuid: b3176e0b-ffaf-4e1b-fd8a-c073bcc4272d
+    tls: false
+  - name: BolVpn*___61
+    type: vless
+    server: 104.18.32.47
+    port: 443
+    uuid: 24159510-d3f9-42db-9bb6-a0b43007b552
+    network: ws
+    servername: bupnl.sepotishop.ir
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /api/v2/data
+      headers:
+        Host: bupnl.sepotishop.ir
+  - name: BolVpn*___63
+    type: vless
+    server: chatgpt.com
+    port: 443
+    uuid: be4a647d-68d1-4194-9179-03907e7e6565
+    network: ws
+    servername: api.arzbot.com
+    tls: true
+    ws-opts:
+      path: /
+  - name: BolVpn*___64
+    type: vless
+    server: chatgpt.com
+    port: 2096
+    uuid: 2e58286f-af86-5710-a2fe-3ddef201d325
+    network: ws
+    servername: df7.SalAR4040.ir
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: df7.SalAR4040.ir
+  - name: BolVpn*___65
+    type: vless
+    server: chatgpt.com
+    port: 2096
+    uuid: 0f6a67a4-84b6-4e3a-a3d0-07d12dee455c
+    network: ws
+    servername: newtest10.pan-soul.site
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: newtest10.pan-soul.site
+  - name: BolVpn*_RU_🇷🇺_66
+    type: vless
+    server: reekc.team-pluss.com
+    port: 80
+    uuid: d75664b9-3135-4ca9-9a77-c1146589c299
+    network: http
+    tls: false
+    http-opts:
+      path: /
+  - name: BolVpn*_BE_🇧🇪_67
+    type: vless
+    server: 146.103.98.100
+    port: 8443
+    uuid: 9ed1ff3b-dfe6-478f-95d4-0dcdc512c1bf
+    servername: pimg.mycdn.me
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: random
+    reality-opts:
+      public-key: evD8WalRSfQZ19cuSjbszCdh6IhaHX1_a_GZqJ51GAs
+  - name: BolVpn*_KZ_🇰🇿_68
+    type: vless
+    server: 194.76.18.1
+    port: 2087
+    uuid: tel-Channel-ViPv2rayngVip2
+    network: ws
+    servername: newger1.aattaash.com
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+  - name: BolVpn*___69
+    type: vless
+    server: webrtc.chatgpt.com
+    port: 443
+    uuid: 👉👉BanV2ray👈👈
+    network: ws
+    servername: udvsusgsh-272625262626.poshakhowdy.ir
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: udvsusgsh-272625262626.poshakhowdy.ir
+  - name: BolVpn*_RU_🇷🇺_70
+    type: vless
+    server: 37.139.32.212
+    port: 443
+    uuid: c38e6142-9223-47ef-84ce-2a84a308cafb
+    servername: m.vk.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: e55fd8f9c9a9a0ca
+  - name: BolVpn*_RU_🇷🇺_71
+    type: vless
+    server: 37.139.32.212
+    port: 443
+    uuid: c38e6142-9223-47ef-84ce-2a84a308cafb
+    servername: m.vk.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: c8597fb67d55d9c4
+  - name: BolVpn*_NL_🇳🇱_74
+    type: vless
+    server: 188.114.98.0
+    port: 443
+    uuid: ef8e608b-3edc-4235-8963-b6334f44b88e
+    network: ws
+    servername: uk-02p.allhubb.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /check
+  - name: BolVpn_🇩🇪_26
+    type: trojan
+    server: 45.32.158.138
+    port: 20994
+    password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+    sni: ads.x5.ru
+    skip-cert-verify: true
+    tls: true
+  - name: BolVpn__29
+    type: trojan
+    server: www.multiplydose.com
+    port: 443
+    password: humanity
+    sni: www.multiplydose.com
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /assignment
+  - name: BolVpn_🇺🇸_37
+    type: trojan
+    server: free1.aattaash.com
+    port: 443
+    password: humanity
+    sni: www.creationlong.org
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /assignment
+  - name: BolVpn_🇺🇸_40
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    sni: www.gossipglove.com
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.gossipglove.com
+  - name: BolVpn_🇳🇱_44
+    type: trojan
+    server: 188.114.98.0
+    port: 443
+    password: humanity
+    sni: www.multiplydose.com
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /assignment
+  - name: BolVpn__45
+    type: trojan
+    server: 104.18.32.47
+    port: 443
+    password: humanity
+    sni: www.gossipglove.com
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.gossipglove.com
+  - name: BolVpn__51
+    type: trojan
+    server: 104.18.32.47
+    port: 443
+    password: humanity
+    sni: www.gossipglove.com
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /assignment
+  - name: BolVpn*_US_🇺🇸_16
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    sni: www.multiplydose.com
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.multiplydose.com
+  - name: BolVpn*_US_🇺🇸_17
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    sni: www.gossipglove.com
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.gossipglove.com
+  - name: BolVpn*_JP_🇯🇵_18
+    type: trojan
+    server: 160.16.81.84
+    port: 5076
+    password: 869e9086806483ca4744a4cb0f3d6e16
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+    tls: true
+  - name: BolVpn*_JP_🇯🇵_27
+    type: trojan
+    server: 52.195.170.6
+    port: 491
+    password: 869e9086806483ca4744a4cb0f3d6e16
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+    tls: true
+  - name: BolVpn*_NL_🇳🇱_29
+    type: trojan
+    server: 188.114.96.3
+    port: 443
+    password: humanity
+    sni: www.multiplydose.com
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /assignment
+  - name: BolVpn*_JP_🇯🇵_32
+    type: trojan
+    server: 160.16.132.38
+    port: 4006
+    password: 869e9086806483ca4744a4cb0f3d6e16
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+    tls: true
+  - name: BolVpn*_JP_🇯🇵_44
+    type: trojan
+    server: 160.16.132.38
+    port: 5076
+    password: 869e9086806483ca4744a4cb0f3d6e16
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+    tls: true
+  - name: BolVpn*_HK_🇭🇰_45
+    type: trojan
+    server: 58.152.110.210
+    port: 443
+    password: 869e9086806483ca4744a4cb0f3d6e16
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+    tls: true
+  - name: BolVpn*_JP_🇯🇵_46
+    type: trojan
+    server: 153.121.51.29
+    port: 1933
+    password: 869e9086806483ca4744a4cb0f3d6e16
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+    tls: true
+  - name: BolVpn*_US_🇺🇸_52
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    sni: www.multiplydose.com
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.multiplydose.com
+  - name: BolVpn*_NL_🇳🇱_56
+    type: trojan
+    server: 188.114.96.3
+    port: 443
+    password: humanity
+    sni: www.multiplydose.com
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /assignment
+  - name: BolVpn**_US_🇺🇸_7
+    type: hysteria2
+    server: 206.71.158.37
+    port: 35000
+    password: Yet-Another-Public-Config-1
+    sni: YAPC-1.afshin.ir
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: Yet-Another-Public-Config-1
+  - name: BolVpn_🇺🇸_55
+    type: hysteria2
+    server: 206.71.158.37
+    port: 35200
+    password: Yet-Another-Public-Config-1
+    sni: YAPC-1.afshin.ir
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: Yet-Another-Public-Config-1
+  - name: BolVpn_🇺🇸_56
+    type: hysteria2
+    server: 206.71.158.37
+    port: 36600
+    password: Yet-Another-Public-Config-1
+    sni: YAPC-1.afshin.ir
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: Yet-Another-Public-Config-1
+  - name: BolVpn*_US_🇺🇸_23
+    type: hysteria2
+    server: yapc-1.adamhayward.co.uk
+    port: 35200
+    password: Yet-Another-Public-Config-1
+    sni: YAPC-1.afshin.ir
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: Yet-Another-Public-Config-1
+  - name: BolVpn*_US_🇺🇸_51
+    type: hysteria2
+    server: 206.71.158.37
+    port: 36300
+    password: Yet-Another-Public-Config-1
+    sni: YAPC-1.afshin.ir
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: Yet-Another-Public-Config-1
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - BolVpn**_US_🇺🇸_4
+      - BolVpn**_IN_🇮🇳_10
+      - BolVpn**_SE_🇸🇪_12
+      - BolVpn**_US_🇺🇸_13
+      - BolVpn**_RO_🇷🇴_14
+      - BolVpn**_US_🇺🇸_15
+      - BolVpn**_US_🇺🇸_16
+      - BolVpn**_US_🇺🇸_17
+      - BolVpn__28
+      - BolVpn_🇨🇦_36
+      - BolVpn_🇨🇦_39
+      - BolVpn_🇨🇦_41
+      - BolVpn_🇨🇦_42
+      - BolVpn_🇫🇷_48
+      - BolVpn_🇫🇷_49
+      - BolVpn_🇨🇦_50
+      - BolVpn_🇫🇷_52
+      - BolVpn_🇫🇷_53
+      - BolVpn_🇨🇦_54
+      - BolVpn*_US_🇺🇸_30
+      - BolVpn*_CA_🇨🇦_31
+      - BolVpn*_FR_🇫🇷_35
+      - BolVpn*_FR_🇫🇷_36
+      - BolVpn*_DE_🇩🇪_38
+      - BolVpn*_CA_🇨🇦_39
+      - BolVpn*_FR_🇫🇷_49
+      - BolVpn*_FR_🇫🇷_58
+      - BolVpn*_FR_🇫🇷_59
+      - BolVpn*_FR_🇫🇷_62
+      - BolVpn*_IN_🇮🇳_72
+      - BolVpn*_SE_🇸🇪_73
+      - BolVpn**_GB_🇬🇧_20
+      - BolVpn_🇫🇷_30
+      - BolVpn_🇪🇨_35
+      - BolVpn_🇵🇱_38
+      - BolVpn_🇫🇷_43
+      - BolVpn_🇫🇷_57
+      - BolVpn*_GB_🇬🇧_4
+      - BolVpn*_GB_🇬🇧_5
+      - BolVpn*_FR_🇫🇷_7
+      - BolVpn*_FR_🇫🇷_9
+      - BolVpn*_FR_🇫🇷_10
+      - BolVpn*_GB_🇬🇧_11
+      - BolVpn*_FR_🇫🇷_12
+      - BolVpn*_FR_🇫🇷_13
+      - BolVpn*_FR_🇫🇷_20
+      - BolVpn**_DE_🇩🇪_1
+      - BolVpn**_DE_🇩🇪_2
+      - BolVpn**_US_🇺🇸_3
+      - BolVpn**_US_🇺🇸_5
+      - BolVpn**_FR_🇫🇷_6
+      - BolVpn**_NL_🇳🇱_8
+      - BolVpn**_NL_🇳🇱_9
+      - BolVpn**_DE_🇩🇪_18
+      - BolVpn**_DE_🇩🇪_19
+      - BolVpn**_RU_🇷🇺_21
+      - BolVpn**_FR_🇫🇷_22
+      - BolVpn**_US_🇺🇸_23
+      - BolVpn**_US_🇺🇸_24
+      - BolVpn**_RU_🇷🇺_25
+      - BolVpn**_US_🇺🇸_26
+      - BolVpn**_FR_🇫🇷_27
+      - BolVpn**_US_🇺🇸_28
+      - BolVpn**_US_🇺🇸_29
+      - BolVpn_🇺🇸_1
+      - BolVpn__3
+      - BolVpn_🇩🇰_4
+      - BolVpn_🇷🇺_5
+      - BolVpn_🇺🇸_6
+      - BolVpn_🇮🇱_7
+      - BolVpn_🇯🇵_8
+      - BolVpn_🇺🇸_10
+      - BolVpn_🇺🇸_11
+      - BolVpn_🇰🇿_13
+      - BolVpn__14
+      - BolVpn_🇺🇸_15
+      - BolVpn__16
+      - BolVpn_🇷🇺_17
+      - BolVpn_🇷🇺_18
+      - BolVpn_🇸🇬_19
+      - BolVpn_🇺🇸_20
+      - BolVpn_🇺🇸_21
+      - BolVpn__22
+      - BolVpn_🇦🇹_23
+      - BolVpn_🇺🇸_24
+      - BolVpn_🇮🇷_27
+      - BolVpn_🇺🇸_31
+      - BolVpn_🇩🇪_32
+      - BolVpn_🇺🇸_34
+      - BolVpn__46
+      - BolVpn_🇷🇺_47
+      - BolVpn_🇺🇸_58
+      - BolVpn_🇷🇺_61
+      - BolVpn_🇷🇺_62
+      - BolVpn_🇺🇸_63
+      - BolVpn_🇱🇰_64
+      - BolVpn_🇷🇺_66
+      - BolVpn__67
+      - BolVpn_🇺🇸_68
+      - BolVpn_🇨🇭_69
+      - BolVpn_🇨🇭_70
+      - BolVpn_🇺🇸_71
+      - BolVpn_🇺🇸_72
+      - BolVpn_🇺🇸_73
+      - BolVpn_🇷🇺_74
+      - BolVpn_🇷🇺_75
+      - BolVpn*_US_🇺🇸_1
+      - BolVpn*___2
+      - BolVpn*_US_🇺🇸_3
+      - BolVpn*_FR_🇫🇷_6
+      - BolVpn*_DK_🇩🇰_14
+      - BolVpn*_DE_🇩🇪_15
+      - BolVpn*___19
+      - BolVpn*_US_🇺🇸_21
+      - BolVpn*_JP_🇯🇵_22
+      - BolVpn*_FI_🇫🇮_24
+      - BolVpn*_US_🇺🇸_25
+      - BolVpn*___26
+      - BolVpn*_US_🇺🇸_28
+      - BolVpn*_US_🇺🇸_33
+      - BolVpn*_US_🇺🇸_34
+      - BolVpn*_DE_🇩🇪_37
+      - BolVpn*___40
+      - BolVpn*_IR_🇮🇷_41
+      - BolVpn*_MX_🇲🇽_42
+      - BolVpn*_US_🇺🇸_43
+      - BolVpn*_KZ_🇰🇿_47
+      - BolVpn*___48
+      - BolVpn*_US_🇺🇸_50
+      - BolVpn*_US_🇺🇸_53
+      - BolVpn*_FI_🇫🇮_54
+      - BolVpn*_US_🇺🇸_55
+      - BolVpn*_US_🇺🇸_57
+      - BolVpn*_DE_🇩🇪_60
+      - BolVpn*___61
+      - BolVpn*___63
+      - BolVpn*___64
+      - BolVpn*___65
+      - BolVpn*_RU_🇷🇺_66
+      - BolVpn*_BE_🇧🇪_67
+      - BolVpn*_KZ_🇰🇿_68
+      - BolVpn*___69
+      - BolVpn*_RU_🇷🇺_70
+      - BolVpn*_RU_🇷🇺_71
+      - BolVpn*_NL_🇳🇱_74
+      - BolVpn_🇩🇪_26
+      - BolVpn__29
+      - BolVpn_🇺🇸_37
+      - BolVpn_🇺🇸_40
+      - BolVpn_🇳🇱_44
+      - BolVpn__45
+      - BolVpn__51
+      - BolVpn*_US_🇺🇸_16
+      - BolVpn*_US_🇺🇸_17
+      - BolVpn*_JP_🇯🇵_18
+      - BolVpn*_JP_🇯🇵_27
+      - BolVpn*_NL_🇳🇱_29
+      - BolVpn*_JP_🇯🇵_32
+      - BolVpn*_JP_🇯🇵_44
+      - BolVpn*_HK_🇭🇰_45
+      - BolVpn*_JP_🇯🇵_46
+      - BolVpn*_US_🇺🇸_52
+      - BolVpn*_NL_🇳🇱_56
+      - BolVpn**_US_🇺🇸_7
+      - BolVpn_🇺🇸_55
+      - BolVpn_🇺🇸_56
+      - BolVpn*_US_🇺🇸_23
+      - BolVpn*_US_🇺🇸_51
+  - name: ♻️ 自动选择
+    type: url-test
+    proxies:
+      - BolVpn**_US_🇺🇸_4
+      - BolVpn**_IN_🇮🇳_10
+      - BolVpn**_SE_🇸🇪_12
+      - BolVpn**_US_🇺🇸_13
+      - BolVpn**_RO_🇷🇴_14
+      - BolVpn**_US_🇺🇸_15
+      - BolVpn**_US_🇺🇸_16
+      - BolVpn**_US_🇺🇸_17
+      - BolVpn__28
+      - BolVpn_🇨🇦_36
+      - BolVpn_🇨🇦_39
+      - BolVpn_🇨🇦_41
+      - BolVpn_🇨🇦_42
+      - BolVpn_🇫🇷_48
+      - BolVpn_🇫🇷_49
+      - BolVpn_🇨🇦_50
+      - BolVpn_🇫🇷_52
+      - BolVpn_🇫🇷_53
+      - BolVpn_🇨🇦_54
+      - BolVpn*_US_🇺🇸_30
+      - BolVpn*_CA_🇨🇦_31
+      - BolVpn*_FR_🇫🇷_35
+      - BolVpn*_FR_🇫🇷_36
+      - BolVpn*_DE_🇩🇪_38
+      - BolVpn*_CA_🇨🇦_39
+      - BolVpn*_FR_🇫🇷_49
+      - BolVpn*_FR_🇫🇷_58
+      - BolVpn*_FR_🇫🇷_59
+      - BolVpn*_FR_🇫🇷_62
+      - BolVpn*_IN_🇮🇳_72
+      - BolVpn*_SE_🇸🇪_73
+      - BolVpn**_GB_🇬🇧_20
+      - BolVpn_🇫🇷_30
+      - BolVpn_🇪🇨_35
+      - BolVpn_🇵🇱_38
+      - BolVpn_🇫🇷_43
+      - BolVpn_🇫🇷_57
+      - BolVpn*_GB_🇬🇧_4
+      - BolVpn*_GB_🇬🇧_5
+      - BolVpn*_FR_🇫🇷_7
+      - BolVpn*_FR_🇫🇷_9
+      - BolVpn*_FR_🇫🇷_10
+      - BolVpn*_GB_🇬🇧_11
+      - BolVpn*_FR_🇫🇷_12
+      - BolVpn*_FR_🇫🇷_13
+      - BolVpn*_FR_🇫🇷_20
+      - BolVpn**_DE_🇩🇪_1
+      - BolVpn**_DE_🇩🇪_2
+      - BolVpn**_US_🇺🇸_3
+      - BolVpn**_US_🇺🇸_5
+      - BolVpn**_FR_🇫🇷_6
+      - BolVpn**_NL_🇳🇱_8
+      - BolVpn**_NL_🇳🇱_9
+      - BolVpn**_DE_🇩🇪_18
+      - BolVpn**_DE_🇩🇪_19
+      - BolVpn**_RU_🇷🇺_21
+      - BolVpn**_FR_🇫🇷_22
+      - BolVpn**_US_🇺🇸_23
+      - BolVpn**_US_🇺🇸_24
+      - BolVpn**_RU_🇷🇺_25
+      - BolVpn**_US_🇺🇸_26
+      - BolVpn**_FR_🇫🇷_27
+      - BolVpn**_US_🇺🇸_28
+      - BolVpn**_US_🇺🇸_29
+      - BolVpn_🇺🇸_1
+      - BolVpn__3
+      - BolVpn_🇩🇰_4
+      - BolVpn_🇷🇺_5
+      - BolVpn_🇺🇸_6
+      - BolVpn_🇮🇱_7
+      - BolVpn_🇯🇵_8
+      - BolVpn_🇺🇸_10
+      - BolVpn_🇺🇸_11
+      - BolVpn_🇰🇿_13
+      - BolVpn__14
+      - BolVpn_🇺🇸_15
+      - BolVpn__16
+      - BolVpn_🇷🇺_17
+      - BolVpn_🇷🇺_18
+      - BolVpn_🇸🇬_19
+      - BolVpn_🇺🇸_20
+      - BolVpn_🇺🇸_21
+      - BolVpn__22
+      - BolVpn_🇦🇹_23
+      - BolVpn_🇺🇸_24
+      - BolVpn_🇮🇷_27
+      - BolVpn_🇺🇸_31
+      - BolVpn_🇩🇪_32
+      - BolVpn_🇺🇸_34
+      - BolVpn__46
+      - BolVpn_🇷🇺_47
+      - BolVpn_🇺🇸_58
+      - BolVpn_🇷🇺_61
+      - BolVpn_🇷🇺_62
+      - BolVpn_🇺🇸_63
+      - BolVpn_🇱🇰_64
+      - BolVpn_🇷🇺_66
+      - BolVpn__67
+      - BolVpn_🇺🇸_68
+      - BolVpn_🇨🇭_69
+      - BolVpn_🇨🇭_70
+      - BolVpn_🇺🇸_71
+      - BolVpn_🇺🇸_72
+      - BolVpn_🇺🇸_73
+      - BolVpn_🇷🇺_74
+      - BolVpn_🇷🇺_75
+      - BolVpn*_US_🇺🇸_1
+      - BolVpn*___2
+      - BolVpn*_US_🇺🇸_3
+      - BolVpn*_FR_🇫🇷_6
+      - BolVpn*_DK_🇩🇰_14
+      - BolVpn*_DE_🇩🇪_15
+      - BolVpn*___19
+      - BolVpn*_US_🇺🇸_21
+      - BolVpn*_JP_🇯🇵_22
+      - BolVpn*_FI_🇫🇮_24
+      - BolVpn*_US_🇺🇸_25
+      - BolVpn*___26
+      - BolVpn*_US_🇺🇸_28
+      - BolVpn*_US_🇺🇸_33
+      - BolVpn*_US_🇺🇸_34
+      - BolVpn*_DE_🇩🇪_37
+      - BolVpn*___40
+      - BolVpn*_IR_🇮🇷_41
+      - BolVpn*_MX_🇲🇽_42
+      - BolVpn*_US_🇺🇸_43
+      - BolVpn*_KZ_🇰🇿_47
+      - BolVpn*___48
+      - BolVpn*_US_🇺🇸_50
+      - BolVpn*_US_🇺🇸_53
+      - BolVpn*_FI_🇫🇮_54
+      - BolVpn*_US_🇺🇸_55
+      - BolVpn*_US_🇺🇸_57
+      - BolVpn*_DE_🇩🇪_60
+      - BolVpn*___61
+      - BolVpn*___63
+      - BolVpn*___64
+      - BolVpn*___65
+      - BolVpn*_RU_🇷🇺_66
+      - BolVpn*_BE_🇧🇪_67
+      - BolVpn*_KZ_🇰🇿_68
+      - BolVpn*___69
+      - BolVpn*_RU_🇷🇺_70
+      - BolVpn*_RU_🇷🇺_71
+      - BolVpn*_NL_🇳🇱_74
+      - BolVpn_🇩🇪_26
+      - BolVpn__29
+      - BolVpn_🇺🇸_37
+      - BolVpn_🇺🇸_40
+      - BolVpn_🇳🇱_44
+      - BolVpn__45
+      - BolVpn__51
+      - BolVpn*_US_🇺🇸_16
+      - BolVpn*_US_🇺🇸_17
+      - BolVpn*_JP_🇯🇵_18
+      - BolVpn*_JP_🇯🇵_27
+      - BolVpn*_NL_🇳🇱_29
+      - BolVpn*_JP_🇯🇵_32
+      - BolVpn*_JP_🇯🇵_44
+      - BolVpn*_HK_🇭🇰_45
+      - BolVpn*_JP_🇯🇵_46
+      - BolVpn*_US_🇺🇸_52
+      - BolVpn*_NL_🇳🇱_56
+      - BolVpn**_US_🇺🇸_7
+      - BolVpn_🇺🇸_55
+      - BolVpn_🇺🇸_56
+      - BolVpn*_US_🇺🇸_23
+      - BolVpn*_US_🇺🇸_51
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - BolVpn**_US_🇺🇸_4
+      - BolVpn**_IN_🇮🇳_10
+      - BolVpn**_SE_🇸🇪_12
+      - BolVpn**_US_🇺🇸_13
+      - BolVpn**_RO_🇷🇴_14
+      - BolVpn**_US_🇺🇸_15
+      - BolVpn**_US_🇺🇸_16
+      - BolVpn**_US_🇺🇸_17
+      - BolVpn__28
+      - BolVpn_🇨🇦_36
+      - BolVpn_🇨🇦_39
+      - BolVpn_🇨🇦_41
+      - BolVpn_🇨🇦_42
+      - BolVpn_🇫🇷_48
+      - BolVpn_🇫🇷_49
+      - BolVpn_🇨🇦_50
+      - BolVpn_🇫🇷_52
+      - BolVpn_🇫🇷_53
+      - BolVpn_🇨🇦_54
+      - BolVpn*_US_🇺🇸_30
+      - BolVpn*_CA_🇨🇦_31
+      - BolVpn*_FR_🇫🇷_35
+      - BolVpn*_FR_🇫🇷_36
+      - BolVpn*_DE_🇩🇪_38
+      - BolVpn*_CA_🇨🇦_39
+      - BolVpn*_FR_🇫🇷_49
+      - BolVpn*_FR_🇫🇷_58
+      - BolVpn*_FR_🇫🇷_59
+      - BolVpn*_FR_🇫🇷_62
+      - BolVpn*_IN_🇮🇳_72
+      - BolVpn*_SE_🇸🇪_73
+      - BolVpn**_GB_🇬🇧_20
+      - BolVpn_🇫🇷_30
+      - BolVpn_🇪🇨_35
+      - BolVpn_🇵🇱_38
+      - BolVpn_🇫🇷_43
+      - BolVpn_🇫🇷_57
+      - BolVpn*_GB_🇬🇧_4
+      - BolVpn*_GB_🇬🇧_5
+      - BolVpn*_FR_🇫🇷_7
+      - BolVpn*_FR_🇫🇷_9
+      - BolVpn*_FR_🇫🇷_10
+      - BolVpn*_GB_🇬🇧_11
+      - BolVpn*_FR_🇫🇷_12
+      - BolVpn*_FR_🇫🇷_13
+      - BolVpn*_FR_🇫🇷_20
+      - BolVpn**_DE_🇩🇪_1
+      - BolVpn**_DE_🇩🇪_2
+      - BolVpn**_US_🇺🇸_3
+      - BolVpn**_US_🇺🇸_5
+      - BolVpn**_FR_🇫🇷_6
+      - BolVpn**_NL_🇳🇱_8
+      - BolVpn**_NL_🇳🇱_9
+      - BolVpn**_DE_🇩🇪_18
+      - BolVpn**_DE_🇩🇪_19
+      - BolVpn**_RU_🇷🇺_21
+      - BolVpn**_FR_🇫🇷_22
+      - BolVpn**_US_🇺🇸_23
+      - BolVpn**_US_🇺🇸_24
+      - BolVpn**_RU_🇷🇺_25
+      - BolVpn**_US_🇺🇸_26
+      - BolVpn**_FR_🇫🇷_27
+      - BolVpn**_US_🇺🇸_28
+      - BolVpn**_US_🇺🇸_29
+      - BolVpn_🇺🇸_1
+      - BolVpn__3
+      - BolVpn_🇩🇰_4
+      - BolVpn_🇷🇺_5
+      - BolVpn_🇺🇸_6
+      - BolVpn_🇮🇱_7
+      - BolVpn_🇯🇵_8
+      - BolVpn_🇺🇸_10
+      - BolVpn_🇺🇸_11
+      - BolVpn_🇰🇿_13
+      - BolVpn__14
+      - BolVpn_🇺🇸_15
+      - BolVpn__16
+      - BolVpn_🇷🇺_17
+      - BolVpn_🇷🇺_18
+      - BolVpn_🇸🇬_19
+      - BolVpn_🇺🇸_20
+      - BolVpn_🇺🇸_21
+      - BolVpn__22
+      - BolVpn_🇦🇹_23
+      - BolVpn_🇺🇸_24
+      - BolVpn_🇮🇷_27
+      - BolVpn_🇺🇸_31
+      - BolVpn_🇩🇪_32
+      - BolVpn_🇺🇸_34
+      - BolVpn__46
+      - BolVpn_🇷🇺_47
+      - BolVpn_🇺🇸_58
+      - BolVpn_🇷🇺_61
+      - BolVpn_🇷🇺_62
+      - BolVpn_🇺🇸_63
+      - BolVpn_🇱🇰_64
+      - BolVpn_🇷🇺_66
+      - BolVpn__67
+      - BolVpn_🇺🇸_68
+      - BolVpn_🇨🇭_69
+      - BolVpn_🇨🇭_70
+      - BolVpn_🇺🇸_71
+      - BolVpn_🇺🇸_72
+      - BolVpn_🇺🇸_73
+      - BolVpn_🇷🇺_74
+      - BolVpn_🇷🇺_75
+      - BolVpn*_US_🇺🇸_1
+      - BolVpn*___2
+      - BolVpn*_US_🇺🇸_3
+      - BolVpn*_FR_🇫🇷_6
+      - BolVpn*_DK_🇩🇰_14
+      - BolVpn*_DE_🇩🇪_15
+      - BolVpn*___19
+      - BolVpn*_US_🇺🇸_21
+      - BolVpn*_JP_🇯🇵_22
+      - BolVpn*_FI_🇫🇮_24
+      - BolVpn*_US_🇺🇸_25
+      - BolVpn*___26
+      - BolVpn*_US_🇺🇸_28
+      - BolVpn*_US_🇺🇸_33
+      - BolVpn*_US_🇺🇸_34
+      - BolVpn*_DE_🇩🇪_37
+      - BolVpn*___40
+      - BolVpn*_IR_🇮🇷_41
+      - BolVpn*_MX_🇲🇽_42
+      - BolVpn*_US_🇺🇸_43
+      - BolVpn*_KZ_🇰🇿_47
+      - BolVpn*___48
+      - BolVpn*_US_🇺🇸_50
+      - BolVpn*_US_🇺🇸_53
+      - BolVpn*_FI_🇫🇮_54
+      - BolVpn*_US_🇺🇸_55
+      - BolVpn*_US_🇺🇸_57
+      - BolVpn*_DE_🇩🇪_60
+      - BolVpn*___61
+      - BolVpn*___63
+      - BolVpn*___64
+      - BolVpn*___65
+      - BolVpn*_RU_🇷🇺_66
+      - BolVpn*_BE_🇧🇪_67
+      - BolVpn*_KZ_🇰🇿_68
+      - BolVpn*___69
+      - BolVpn*_RU_🇷🇺_70
+      - BolVpn*_RU_🇷🇺_71
+      - BolVpn*_NL_🇳🇱_74
+      - BolVpn_🇩🇪_26
+      - BolVpn__29
+      - BolVpn_🇺🇸_37
+      - BolVpn_🇺🇸_40
+      - BolVpn_🇳🇱_44
+      - BolVpn__45
+      - BolVpn__51
+      - BolVpn*_US_🇺🇸_16
+      - BolVpn*_US_🇺🇸_17
+      - BolVpn*_JP_🇯🇵_18
+      - BolVpn*_JP_🇯🇵_27
+      - BolVpn*_NL_🇳🇱_29
+      - BolVpn*_JP_🇯🇵_32
+      - BolVpn*_JP_🇯🇵_44
+      - BolVpn*_HK_🇭🇰_45
+      - BolVpn*_JP_🇯🇵_46
+      - BolVpn*_US_🇺🇸_52
+      - BolVpn*_NL_🇳🇱_56
+      - BolVpn**_US_🇺🇸_7
+      - BolVpn_🇺🇸_55
+      - BolVpn_🇺🇸_56
+      - BolVpn*_US_🇺🇸_23
+      - BolVpn*_US_🇺🇸_51
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - BolVpn**_US_🇺🇸_4
+      - BolVpn**_IN_🇮🇳_10
+      - BolVpn**_SE_🇸🇪_12
+      - BolVpn**_US_🇺🇸_13
+      - BolVpn**_RO_🇷🇴_14
+      - BolVpn**_US_🇺🇸_15
+      - BolVpn**_US_🇺🇸_16
+      - BolVpn**_US_🇺🇸_17
+      - BolVpn__28
+      - BolVpn_🇨🇦_36
+      - BolVpn_🇨🇦_39
+      - BolVpn_🇨🇦_41
+      - BolVpn_🇨🇦_42
+      - BolVpn_🇫🇷_48
+      - BolVpn_🇫🇷_49
+      - BolVpn_🇨🇦_50
+      - BolVpn_🇫🇷_52
+      - BolVpn_🇫🇷_53
+      - BolVpn_🇨🇦_54
+      - BolVpn*_US_🇺🇸_30
+      - BolVpn*_CA_🇨🇦_31
+      - BolVpn*_FR_🇫🇷_35
+      - BolVpn*_FR_🇫🇷_36
+      - BolVpn*_DE_🇩🇪_38
+      - BolVpn*_CA_🇨🇦_39
+      - BolVpn*_FR_🇫🇷_49
+      - BolVpn*_FR_🇫🇷_58
+      - BolVpn*_FR_🇫🇷_59
+      - BolVpn*_FR_🇫🇷_62
+      - BolVpn*_IN_🇮🇳_72
+      - BolVpn*_SE_🇸🇪_73
+      - BolVpn**_GB_🇬🇧_20
+      - BolVpn_🇫🇷_30
+      - BolVpn_🇪🇨_35
+      - BolVpn_🇵🇱_38
+      - BolVpn_🇫🇷_43
+      - BolVpn_🇫🇷_57
+      - BolVpn*_GB_🇬🇧_4
+      - BolVpn*_GB_🇬🇧_5
+      - BolVpn*_FR_🇫🇷_7
+      - BolVpn*_FR_🇫🇷_9
+      - BolVpn*_FR_🇫🇷_10
+      - BolVpn*_GB_🇬🇧_11
+      - BolVpn*_FR_🇫🇷_12
+      - BolVpn*_FR_🇫🇷_13
+      - BolVpn*_FR_🇫🇷_20
+      - BolVpn**_DE_🇩🇪_1
+      - BolVpn**_DE_🇩🇪_2
+      - BolVpn**_US_🇺🇸_3
+      - BolVpn**_US_🇺🇸_5
+      - BolVpn**_FR_🇫🇷_6
+      - BolVpn**_NL_🇳🇱_8
+      - BolVpn**_NL_🇳🇱_9
+      - BolVpn**_DE_🇩🇪_18
+      - BolVpn**_DE_🇩🇪_19
+      - BolVpn**_RU_🇷🇺_21
+      - BolVpn**_FR_🇫🇷_22
+      - BolVpn**_US_🇺🇸_23
+      - BolVpn**_US_🇺🇸_24
+      - BolVpn**_RU_🇷🇺_25
+      - BolVpn**_US_🇺🇸_26
+      - BolVpn**_FR_🇫🇷_27
+      - BolVpn**_US_🇺🇸_28
+      - BolVpn**_US_🇺🇸_29
+      - BolVpn_🇺🇸_1
+      - BolVpn__3
+      - BolVpn_🇩🇰_4
+      - BolVpn_🇷🇺_5
+      - BolVpn_🇺🇸_6
+      - BolVpn_🇮🇱_7
+      - BolVpn_🇯🇵_8
+      - BolVpn_🇺🇸_10
+      - BolVpn_🇺🇸_11
+      - BolVpn_🇰🇿_13
+      - BolVpn__14
+      - BolVpn_🇺🇸_15
+      - BolVpn__16
+      - BolVpn_🇷🇺_17
+      - BolVpn_🇷🇺_18
+      - BolVpn_🇸🇬_19
+      - BolVpn_🇺🇸_20
+      - BolVpn_🇺🇸_21
+      - BolVpn__22
+      - BolVpn_🇦🇹_23
+      - BolVpn_🇺🇸_24
+      - BolVpn_🇮🇷_27
+      - BolVpn_🇺🇸_31
+      - BolVpn_🇩🇪_32
+      - BolVpn_🇺🇸_34
+      - BolVpn__46
+      - BolVpn_🇷🇺_47
+      - BolVpn_🇺🇸_58
+      - BolVpn_🇷🇺_61
+      - BolVpn_🇷🇺_62
+      - BolVpn_🇺🇸_63
+      - BolVpn_🇱🇰_64
+      - BolVpn_🇷🇺_66
+      - BolVpn__67
+      - BolVpn_🇺🇸_68
+      - BolVpn_🇨🇭_69
+      - BolVpn_🇨🇭_70
+      - BolVpn_🇺🇸_71
+      - BolVpn_🇺🇸_72
+      - BolVpn_🇺🇸_73
+      - BolVpn_🇷🇺_74
+      - BolVpn_🇷🇺_75
+      - BolVpn*_US_🇺🇸_1
+      - BolVpn*___2
+      - BolVpn*_US_🇺🇸_3
+      - BolVpn*_FR_🇫🇷_6
+      - BolVpn*_DK_🇩🇰_14
+      - BolVpn*_DE_🇩🇪_15
+      - BolVpn*___19
+      - BolVpn*_US_🇺🇸_21
+      - BolVpn*_JP_🇯🇵_22
+      - BolVpn*_FI_🇫🇮_24
+      - BolVpn*_US_🇺🇸_25
+      - BolVpn*___26
+      - BolVpn*_US_🇺🇸_28
+      - BolVpn*_US_🇺🇸_33
+      - BolVpn*_US_🇺🇸_34
+      - BolVpn*_DE_🇩🇪_37
+      - BolVpn*___40
+      - BolVpn*_IR_🇮🇷_41
+      - BolVpn*_MX_🇲🇽_42
+      - BolVpn*_US_🇺🇸_43
+      - BolVpn*_KZ_🇰🇿_47
+      - BolVpn*___48
+      - BolVpn*_US_🇺🇸_50
+      - BolVpn*_US_🇺🇸_53
+      - BolVpn*_FI_🇫🇮_54
+      - BolVpn*_US_🇺🇸_55
+      - BolVpn*_US_🇺🇸_57
+      - BolVpn*_DE_🇩🇪_60
+      - BolVpn*___61
+      - BolVpn*___63
+      - BolVpn*___64
+      - BolVpn*___65
+      - BolVpn*_RU_🇷🇺_66
+      - BolVpn*_BE_🇧🇪_67
+      - BolVpn*_KZ_🇰🇿_68
+      - BolVpn*___69
+      - BolVpn*_RU_🇷🇺_70
+      - BolVpn*_RU_🇷🇺_71
+      - BolVpn*_NL_🇳🇱_74
+      - BolVpn_🇩🇪_26
+      - BolVpn__29
+      - BolVpn_🇺🇸_37
+      - BolVpn_🇺🇸_40
+      - BolVpn_🇳🇱_44
+      - BolVpn__45
+      - BolVpn__51
+      - BolVpn*_US_🇺🇸_16
+      - BolVpn*_US_🇺🇸_17
+      - BolVpn*_JP_🇯🇵_18
+      - BolVpn*_JP_🇯🇵_27
+      - BolVpn*_NL_🇳🇱_29
+      - BolVpn*_JP_🇯🇵_32
+      - BolVpn*_JP_🇯🇵_44
+      - BolVpn*_HK_🇭🇰_45
+      - BolVpn*_JP_🇯🇵_46
+      - BolVpn*_US_🇺🇸_52
+      - BolVpn*_NL_🇳🇱_56
+      - BolVpn**_US_🇺🇸_7
+      - BolVpn_🇺🇸_55
+      - BolVpn_🇺🇸_56
+      - BolVpn*_US_🇺🇸_23
+      - BolVpn*_US_🇺🇸_51
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - BolVpn**_US_🇺🇸_4
+      - BolVpn**_IN_🇮🇳_10
+      - BolVpn**_SE_🇸🇪_12
+      - BolVpn**_US_🇺🇸_13
+      - BolVpn**_RO_🇷🇴_14
+      - BolVpn**_US_🇺🇸_15
+      - BolVpn**_US_🇺🇸_16
+      - BolVpn**_US_🇺🇸_17
+      - BolVpn__28
+      - BolVpn_🇨🇦_36
+      - BolVpn_🇨🇦_39
+      - BolVpn_🇨🇦_41
+      - BolVpn_🇨🇦_42
+      - BolVpn_🇫🇷_48
+      - BolVpn_🇫🇷_49
+      - BolVpn_🇨🇦_50
+      - BolVpn_🇫🇷_52
+      - BolVpn_🇫🇷_53
+      - BolVpn_🇨🇦_54
+      - BolVpn*_US_🇺🇸_30
+      - BolVpn*_CA_🇨🇦_31
+      - BolVpn*_FR_🇫🇷_35
+      - BolVpn*_FR_🇫🇷_36
+      - BolVpn*_DE_🇩🇪_38
+      - BolVpn*_CA_🇨🇦_39
+      - BolVpn*_FR_🇫🇷_49
+      - BolVpn*_FR_🇫🇷_58
+      - BolVpn*_FR_🇫🇷_59
+      - BolVpn*_FR_🇫🇷_62
+      - BolVpn*_IN_🇮🇳_72
+      - BolVpn*_SE_🇸🇪_73
+      - BolVpn**_GB_🇬🇧_20
+      - BolVpn_🇫🇷_30
+      - BolVpn_🇪🇨_35
+      - BolVpn_🇵🇱_38
+      - BolVpn_🇫🇷_43
+      - BolVpn_🇫🇷_57
+      - BolVpn*_GB_🇬🇧_4
+      - BolVpn*_GB_🇬🇧_5
+      - BolVpn*_FR_🇫🇷_7
+      - BolVpn*_FR_🇫🇷_9
+      - BolVpn*_FR_🇫🇷_10
+      - BolVpn*_GB_🇬🇧_11
+      - BolVpn*_FR_🇫🇷_12
+      - BolVpn*_FR_🇫🇷_13
+      - BolVpn*_FR_🇫🇷_20
+      - BolVpn**_DE_🇩🇪_1
+      - BolVpn**_DE_🇩🇪_2
+      - BolVpn**_US_🇺🇸_3
+      - BolVpn**_US_🇺🇸_5
+      - BolVpn**_FR_🇫🇷_6
+      - BolVpn**_NL_🇳🇱_8
+      - BolVpn**_NL_🇳🇱_9
+      - BolVpn**_DE_🇩🇪_18
+      - BolVpn**_DE_🇩🇪_19
+      - BolVpn**_RU_🇷🇺_21
+      - BolVpn**_FR_🇫🇷_22
+      - BolVpn**_US_🇺🇸_23
+      - BolVpn**_US_🇺🇸_24
+      - BolVpn**_RU_🇷🇺_25
+      - BolVpn**_US_🇺🇸_26
+      - BolVpn**_FR_🇫🇷_27
+      - BolVpn**_US_🇺🇸_28
+      - BolVpn**_US_🇺🇸_29
+      - BolVpn_🇺🇸_1
+      - BolVpn__3
+      - BolVpn_🇩🇰_4
+      - BolVpn_🇷🇺_5
+      - BolVpn_🇺🇸_6
+      - BolVpn_🇮🇱_7
+      - BolVpn_🇯🇵_8
+      - BolVpn_🇺🇸_10
+      - BolVpn_🇺🇸_11
+      - BolVpn_🇰🇿_13
+      - BolVpn__14
+      - BolVpn_🇺🇸_15
+      - BolVpn__16
+      - BolVpn_🇷🇺_17
+      - BolVpn_🇷🇺_18
+      - BolVpn_🇸🇬_19
+      - BolVpn_🇺🇸_20
+      - BolVpn_🇺🇸_21
+      - BolVpn__22
+      - BolVpn_🇦🇹_23
+      - BolVpn_🇺🇸_24
+      - BolVpn_🇮🇷_27
+      - BolVpn_🇺🇸_31
+      - BolVpn_🇩🇪_32
+      - BolVpn_🇺🇸_34
+      - BolVpn__46
+      - BolVpn_🇷🇺_47
+      - BolVpn_🇺🇸_58
+      - BolVpn_🇷🇺_61
+      - BolVpn_🇷🇺_62
+      - BolVpn_🇺🇸_63
+      - BolVpn_🇱🇰_64
+      - BolVpn_🇷🇺_66
+      - BolVpn__67
+      - BolVpn_🇺🇸_68
+      - BolVpn_🇨🇭_69
+      - BolVpn_🇨🇭_70
+      - BolVpn_🇺🇸_71
+      - BolVpn_🇺🇸_72
+      - BolVpn_🇺🇸_73
+      - BolVpn_🇷🇺_74
+      - BolVpn_🇷🇺_75
+      - BolVpn*_US_🇺🇸_1
+      - BolVpn*___2
+      - BolVpn*_US_🇺🇸_3
+      - BolVpn*_FR_🇫🇷_6
+      - BolVpn*_DK_🇩🇰_14
+      - BolVpn*_DE_🇩🇪_15
+      - BolVpn*___19
+      - BolVpn*_US_🇺🇸_21
+      - BolVpn*_JP_🇯🇵_22
+      - BolVpn*_FI_🇫🇮_24
+      - BolVpn*_US_🇺🇸_25
+      - BolVpn*___26
+      - BolVpn*_US_🇺🇸_28
+      - BolVpn*_US_🇺🇸_33
+      - BolVpn*_US_🇺🇸_34
+      - BolVpn*_DE_🇩🇪_37
+      - BolVpn*___40
+      - BolVpn*_IR_🇮🇷_41
+      - BolVpn*_MX_🇲🇽_42
+      - BolVpn*_US_🇺🇸_43
+      - BolVpn*_KZ_🇰🇿_47
+      - BolVpn*___48
+      - BolVpn*_US_🇺🇸_50
+      - BolVpn*_US_🇺🇸_53
+      - BolVpn*_FI_🇫🇮_54
+      - BolVpn*_US_🇺🇸_55
+      - BolVpn*_US_🇺🇸_57
+      - BolVpn*_DE_🇩🇪_60
+      - BolVpn*___61
+      - BolVpn*___63
+      - BolVpn*___64
+      - BolVpn*___65
+      - BolVpn*_RU_🇷🇺_66
+      - BolVpn*_BE_🇧🇪_67
+      - BolVpn*_KZ_🇰🇿_68
+      - BolVpn*___69
+      - BolVpn*_RU_🇷🇺_70
+      - BolVpn*_RU_🇷🇺_71
+      - BolVpn*_NL_🇳🇱_74
+      - BolVpn_🇩🇪_26
+      - BolVpn__29
+      - BolVpn_🇺🇸_37
+      - BolVpn_🇺🇸_40
+      - BolVpn_🇳🇱_44
+      - BolVpn__45
+      - BolVpn__51
+      - BolVpn*_US_🇺🇸_16
+      - BolVpn*_US_🇺🇸_17
+      - BolVpn*_JP_🇯🇵_18
+      - BolVpn*_JP_🇯🇵_27
+      - BolVpn*_NL_🇳🇱_29
+      - BolVpn*_JP_🇯🇵_32
+      - BolVpn*_JP_🇯🇵_44
+      - BolVpn*_HK_🇭🇰_45
+      - BolVpn*_JP_🇯🇵_46
+      - BolVpn*_US_🇺🇸_52
+      - BolVpn*_NL_🇳🇱_56
+      - BolVpn**_US_🇺🇸_7
+      - BolVpn_🇺🇸_55
+      - BolVpn_🇺🇸_56
+      - BolVpn*_US_🇺🇸_23
+      - BolVpn*_US_🇺🇸_51
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - BolVpn**_US_🇺🇸_4
+      - BolVpn**_IN_🇮🇳_10
+      - BolVpn**_SE_🇸🇪_12
+      - BolVpn**_US_🇺🇸_13
+      - BolVpn**_RO_🇷🇴_14
+      - BolVpn**_US_🇺🇸_15
+      - BolVpn**_US_🇺🇸_16
+      - BolVpn**_US_🇺🇸_17
+      - BolVpn__28
+      - BolVpn_🇨🇦_36
+      - BolVpn_🇨🇦_39
+      - BolVpn_🇨🇦_41
+      - BolVpn_🇨🇦_42
+      - BolVpn_🇫🇷_48
+      - BolVpn_🇫🇷_49
+      - BolVpn_🇨🇦_50
+      - BolVpn_🇫🇷_52
+      - BolVpn_🇫🇷_53
+      - BolVpn_🇨🇦_54
+      - BolVpn*_US_🇺🇸_30
+      - BolVpn*_CA_🇨🇦_31
+      - BolVpn*_FR_🇫🇷_35
+      - BolVpn*_FR_🇫🇷_36
+      - BolVpn*_DE_🇩🇪_38
+      - BolVpn*_CA_🇨🇦_39
+      - BolVpn*_FR_🇫🇷_49
+      - BolVpn*_FR_🇫🇷_58
+      - BolVpn*_FR_🇫🇷_59
+      - BolVpn*_FR_🇫🇷_62
+      - BolVpn*_IN_🇮🇳_72
+      - BolVpn*_SE_🇸🇪_73
+      - BolVpn**_GB_🇬🇧_20
+      - BolVpn_🇫🇷_30
+      - BolVpn_🇪🇨_35
+      - BolVpn_🇵🇱_38
+      - BolVpn_🇫🇷_43
+      - BolVpn_🇫🇷_57
+      - BolVpn*_GB_🇬🇧_4
+      - BolVpn*_GB_🇬🇧_5
+      - BolVpn*_FR_🇫🇷_7
+      - BolVpn*_FR_🇫🇷_9
+      - BolVpn*_FR_🇫🇷_10
+      - BolVpn*_GB_🇬🇧_11
+      - BolVpn*_FR_🇫🇷_12
+      - BolVpn*_FR_🇫🇷_13
+      - BolVpn*_FR_🇫🇷_20
+      - BolVpn**_DE_🇩🇪_1
+      - BolVpn**_DE_🇩🇪_2
+      - BolVpn**_US_🇺🇸_3
+      - BolVpn**_US_🇺🇸_5
+      - BolVpn**_FR_🇫🇷_6
+      - BolVpn**_NL_🇳🇱_8
+      - BolVpn**_NL_🇳🇱_9
+      - BolVpn**_DE_🇩🇪_18
+      - BolVpn**_DE_🇩🇪_19
+      - BolVpn**_RU_🇷🇺_21
+      - BolVpn**_FR_🇫🇷_22
+      - BolVpn**_US_🇺🇸_23
+      - BolVpn**_US_🇺🇸_24
+      - BolVpn**_RU_🇷🇺_25
+      - BolVpn**_US_🇺🇸_26
+      - BolVpn**_FR_🇫🇷_27
+      - BolVpn**_US_🇺🇸_28
+      - BolVpn**_US_🇺🇸_29
+      - BolVpn_🇺🇸_1
+      - BolVpn__3
+      - BolVpn_🇩🇰_4
+      - BolVpn_🇷🇺_5
+      - BolVpn_🇺🇸_6
+      - BolVpn_🇮🇱_7
+      - BolVpn_🇯🇵_8
+      - BolVpn_🇺🇸_10
+      - BolVpn_🇺🇸_11
+      - BolVpn_🇰🇿_13
+      - BolVpn__14
+      - BolVpn_🇺🇸_15
+      - BolVpn__16
+      - BolVpn_🇷🇺_17
+      - BolVpn_🇷🇺_18
+      - BolVpn_🇸🇬_19
+      - BolVpn_🇺🇸_20
+      - BolVpn_🇺🇸_21
+      - BolVpn__22
+      - BolVpn_🇦🇹_23
+      - BolVpn_🇺🇸_24
+      - BolVpn_🇮🇷_27
+      - BolVpn_🇺🇸_31
+      - BolVpn_🇩🇪_32
+      - BolVpn_🇺🇸_34
+      - BolVpn__46
+      - BolVpn_🇷🇺_47
+      - BolVpn_🇺🇸_58
+      - BolVpn_🇷🇺_61
+      - BolVpn_🇷🇺_62
+      - BolVpn_🇺🇸_63
+      - BolVpn_🇱🇰_64
+      - BolVpn_🇷🇺_66
+      - BolVpn__67
+      - BolVpn_🇺🇸_68
+      - BolVpn_🇨🇭_69
+      - BolVpn_🇨🇭_70
+      - BolVpn_🇺🇸_71
+      - BolVpn_🇺🇸_72
+      - BolVpn_🇺🇸_73
+      - BolVpn_🇷🇺_74
+      - BolVpn_🇷🇺_75
+      - BolVpn*_US_🇺🇸_1
+      - BolVpn*___2
+      - BolVpn*_US_🇺🇸_3
+      - BolVpn*_FR_🇫🇷_6
+      - BolVpn*_DK_🇩🇰_14
+      - BolVpn*_DE_🇩🇪_15
+      - BolVpn*___19
+      - BolVpn*_US_🇺🇸_21
+      - BolVpn*_JP_🇯🇵_22
+      - BolVpn*_FI_🇫🇮_24
+      - BolVpn*_US_🇺🇸_25
+      - BolVpn*___26
+      - BolVpn*_US_🇺🇸_28
+      - BolVpn*_US_🇺🇸_33
+      - BolVpn*_US_🇺🇸_34
+      - BolVpn*_DE_🇩🇪_37
+      - BolVpn*___40
+      - BolVpn*_IR_🇮🇷_41
+      - BolVpn*_MX_🇲🇽_42
+      - BolVpn*_US_🇺🇸_43
+      - BolVpn*_KZ_🇰🇿_47
+      - BolVpn*___48
+      - BolVpn*_US_🇺🇸_50
+      - BolVpn*_US_🇺🇸_53
+      - BolVpn*_FI_🇫🇮_54
+      - BolVpn*_US_🇺🇸_55
+      - BolVpn*_US_🇺🇸_57
+      - BolVpn*_DE_🇩🇪_60
+      - BolVpn*___61
+      - BolVpn*___63
+      - BolVpn*___64
+      - BolVpn*___65
+      - BolVpn*_RU_🇷🇺_66
+      - BolVpn*_BE_🇧🇪_67
+      - BolVpn*_KZ_🇰🇿_68
+      - BolVpn*___69
+      - BolVpn*_RU_🇷🇺_70
+      - BolVpn*_RU_🇷🇺_71
+      - BolVpn*_NL_🇳🇱_74
+      - BolVpn_🇩🇪_26
+      - BolVpn__29
+      - BolVpn_🇺🇸_37
+      - BolVpn_🇺🇸_40
+      - BolVpn_🇳🇱_44
+      - BolVpn__45
+      - BolVpn__51
+      - BolVpn*_US_🇺🇸_16
+      - BolVpn*_US_🇺🇸_17
+      - BolVpn*_JP_🇯🇵_18
+      - BolVpn*_JP_🇯🇵_27
+      - BolVpn*_NL_🇳🇱_29
+      - BolVpn*_JP_🇯🇵_32
+      - BolVpn*_JP_🇯🇵_44
+      - BolVpn*_HK_🇭🇰_45
+      - BolVpn*_JP_🇯🇵_46
+      - BolVpn*_US_🇺🇸_52
+      - BolVpn*_NL_🇳🇱_56
+      - BolVpn**_US_🇺🇸_7
+      - BolVpn_🇺🇸_55
+      - BolVpn_🇺🇸_56
+      - BolVpn*_US_🇺🇸_23
+      - BolVpn*_US_🇺🇸_51
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - BolVpn**_US_🇺🇸_4
+      - BolVpn**_IN_🇮🇳_10
+      - BolVpn**_SE_🇸🇪_12
+      - BolVpn**_US_🇺🇸_13
+      - BolVpn**_RO_🇷🇴_14
+      - BolVpn**_US_🇺🇸_15
+      - BolVpn**_US_🇺🇸_16
+      - BolVpn**_US_🇺🇸_17
+      - BolVpn__28
+      - BolVpn_🇨🇦_36
+      - BolVpn_🇨🇦_39
+      - BolVpn_🇨🇦_41
+      - BolVpn_🇨🇦_42
+      - BolVpn_🇫🇷_48
+      - BolVpn_🇫🇷_49
+      - BolVpn_🇨🇦_50
+      - BolVpn_🇫🇷_52
+      - BolVpn_🇫🇷_53
+      - BolVpn_🇨🇦_54
+      - BolVpn*_US_🇺🇸_30
+      - BolVpn*_CA_🇨🇦_31
+      - BolVpn*_FR_🇫🇷_35
+      - BolVpn*_FR_🇫🇷_36
+      - BolVpn*_DE_🇩🇪_38
+      - BolVpn*_CA_🇨🇦_39
+      - BolVpn*_FR_🇫🇷_49
+      - BolVpn*_FR_🇫🇷_58
+      - BolVpn*_FR_🇫🇷_59
+      - BolVpn*_FR_🇫🇷_62
+      - BolVpn*_IN_🇮🇳_72
+      - BolVpn*_SE_🇸🇪_73
+      - BolVpn**_GB_🇬🇧_20
+      - BolVpn_🇫🇷_30
+      - BolVpn_🇪🇨_35
+      - BolVpn_🇵🇱_38
+      - BolVpn_🇫🇷_43
+      - BolVpn_🇫🇷_57
+      - BolVpn*_GB_🇬🇧_4
+      - BolVpn*_GB_🇬🇧_5
+      - BolVpn*_FR_🇫🇷_7
+      - BolVpn*_FR_🇫🇷_9
+      - BolVpn*_FR_🇫🇷_10
+      - BolVpn*_GB_🇬🇧_11
+      - BolVpn*_FR_🇫🇷_12
+      - BolVpn*_FR_🇫🇷_13
+      - BolVpn*_FR_🇫🇷_20
+      - BolVpn**_DE_🇩🇪_1
+      - BolVpn**_DE_🇩🇪_2
+      - BolVpn**_US_🇺🇸_3
+      - BolVpn**_US_🇺🇸_5
+      - BolVpn**_FR_🇫🇷_6
+      - BolVpn**_NL_🇳🇱_8
+      - BolVpn**_NL_🇳🇱_9
+      - BolVpn**_DE_🇩🇪_18
+      - BolVpn**_DE_🇩🇪_19
+      - BolVpn**_RU_🇷🇺_21
+      - BolVpn**_FR_🇫🇷_22
+      - BolVpn**_US_🇺🇸_23
+      - BolVpn**_US_🇺🇸_24
+      - BolVpn**_RU_🇷🇺_25
+      - BolVpn**_US_🇺🇸_26
+      - BolVpn**_FR_🇫🇷_27
+      - BolVpn**_US_🇺🇸_28
+      - BolVpn**_US_🇺🇸_29
+      - BolVpn_🇺🇸_1
+      - BolVpn__3
+      - BolVpn_🇩🇰_4
+      - BolVpn_🇷🇺_5
+      - BolVpn_🇺🇸_6
+      - BolVpn_🇮🇱_7
+      - BolVpn_🇯🇵_8
+      - BolVpn_🇺🇸_10
+      - BolVpn_🇺🇸_11
+      - BolVpn_🇰🇿_13
+      - BolVpn__14
+      - BolVpn_🇺🇸_15
+      - BolVpn__16
+      - BolVpn_🇷🇺_17
+      - BolVpn_🇷🇺_18
+      - BolVpn_🇸🇬_19
+      - BolVpn_🇺🇸_20
+      - BolVpn_🇺🇸_21
+      - BolVpn__22
+      - BolVpn_🇦🇹_23
+      - BolVpn_🇺🇸_24
+      - BolVpn_🇮🇷_27
+      - BolVpn_🇺🇸_31
+      - BolVpn_🇩🇪_32
+      - BolVpn_🇺🇸_34
+      - BolVpn__46
+      - BolVpn_🇷🇺_47
+      - BolVpn_🇺🇸_58
+      - BolVpn_🇷🇺_61
+      - BolVpn_🇷🇺_62
+      - BolVpn_🇺🇸_63
+      - BolVpn_🇱🇰_64
+      - BolVpn_🇷🇺_66
+      - BolVpn__67
+      - BolVpn_🇺🇸_68
+      - BolVpn_🇨🇭_69
+      - BolVpn_🇨🇭_70
+      - BolVpn_🇺🇸_71
+      - BolVpn_🇺🇸_72
+      - BolVpn_🇺🇸_73
+      - BolVpn_🇷🇺_74
+      - BolVpn_🇷🇺_75
+      - BolVpn*_US_🇺🇸_1
+      - BolVpn*___2
+      - BolVpn*_US_🇺🇸_3
+      - BolVpn*_FR_🇫🇷_6
+      - BolVpn*_DK_🇩🇰_14
+      - BolVpn*_DE_🇩🇪_15
+      - BolVpn*___19
+      - BolVpn*_US_🇺🇸_21
+      - BolVpn*_JP_🇯🇵_22
+      - BolVpn*_FI_🇫🇮_24
+      - BolVpn*_US_🇺🇸_25
+      - BolVpn*___26
+      - BolVpn*_US_🇺🇸_28
+      - BolVpn*_US_🇺🇸_33
+      - BolVpn*_US_🇺🇸_34
+      - BolVpn*_DE_🇩🇪_37
+      - BolVpn*___40
+      - BolVpn*_IR_🇮🇷_41
+      - BolVpn*_MX_🇲🇽_42
+      - BolVpn*_US_🇺🇸_43
+      - BolVpn*_KZ_🇰🇿_47
+      - BolVpn*___48
+      - BolVpn*_US_🇺🇸_50
+      - BolVpn*_US_🇺🇸_53
+      - BolVpn*_FI_🇫🇮_54
+      - BolVpn*_US_🇺🇸_55
+      - BolVpn*_US_🇺🇸_57
+      - BolVpn*_DE_🇩🇪_60
+      - BolVpn*___61
+      - BolVpn*___63
+      - BolVpn*___64
+      - BolVpn*___65
+      - BolVpn*_RU_🇷🇺_66
+      - BolVpn*_BE_🇧🇪_67
+      - BolVpn*_KZ_🇰🇿_68
+      - BolVpn*___69
+      - BolVpn*_RU_🇷🇺_70
+      - BolVpn*_RU_🇷🇺_71
+      - BolVpn*_NL_🇳🇱_74
+      - BolVpn_🇩🇪_26
+      - BolVpn__29
+      - BolVpn_🇺🇸_37
+      - BolVpn_🇺🇸_40
+      - BolVpn_🇳🇱_44
+      - BolVpn__45
+      - BolVpn__51
+      - BolVpn*_US_🇺🇸_16
+      - BolVpn*_US_🇺🇸_17
+      - BolVpn*_JP_🇯🇵_18
+      - BolVpn*_JP_🇯🇵_27
+      - BolVpn*_NL_🇳🇱_29
+      - BolVpn*_JP_🇯🇵_32
+      - BolVpn*_JP_🇯🇵_44
+      - BolVpn*_HK_🇭🇰_45
+      - BolVpn*_JP_🇯🇵_46
+      - BolVpn*_US_🇺🇸_52
+      - BolVpn*_NL_🇳🇱_56
+      - BolVpn**_US_🇺🇸_7
+      - BolVpn_🇺🇸_55
+      - BolVpn_🇺🇸_56
+      - BolVpn*_US_🇺🇸_23
+      - BolVpn*_US_🇺🇸_51
+rule-providers:
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/LocalAreaNetwork.list
+    path: ./rules/LocalAreaNetwork.yaml
+  BanAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/BanAD.list
+    path: ./rules/BanAD.yaml
+  BanProgramAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/BanProgramAD.list
+    path: ./rules/BanProgramAD.yaml
+  GoogleCN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/GoogleCN.list
+    path: ./rules/GoogleCN.yaml
+  SteamCN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/SteamCN.list
+    path: ./rules/SteamCN.yaml
+  Microsoft:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Microsoft.list
+    path: ./rules/Microsoft.yaml
+  Apple:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Apple.list
+    path: ./rules/Apple.yaml
+  ProxyMedia:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyMedia.list
+    path: ./rules/ProxyMedia.yaml
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Telegram.list
+    path: ./rules/Telegram.yaml
+  ProxyLite:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyLite.list
+    path: ./rules/ProxyLite.yaml
+  ChinaDomain:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaDomain.list
+    path: ./rules/ChinaDomain.yaml
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaCompanyIp.list
+    path: ./rules/ChinaCompanyIp.yaml
+rules:
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - RULE-SET,BanAD,🛑 全球拦截
+  - RULE-SET,BanProgramAD,🍃 应用净化
+  - RULE-SET,GoogleCN,🎯 全球直连
+  - RULE-SET,SteamCN,🎯 全球直连
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,ProxyMedia,🌍 国外媒体
+  - RULE-SET,Telegram,📲 电报信息
+  - RULE-SET,ProxyLite,🚀 节点选择
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
