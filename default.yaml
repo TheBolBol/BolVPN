@@ -46,6 +46,33 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
+  - name: کانفیگ ها امن نیستند.
+    type: vless
+    server: 0.0.0.1
+    port: 443
+    uuid: 00000000-0000-0000-0000-000000000000
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+  - name: با فیلترشکن آپدیت کنید.
+    type: vless
+    server: 127.0.0.1
+    port: 443
+    uuid: 00000000-0000-0000-0000-000000000000
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+  - name: هر 2 لینک در طی روز آپدیت میشوند.
+    type: vless
+    server: 127.0.0.1
+    port: 444
+    uuid: 00000000-0000-0000-0000-000000000000
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
   - name: BolVPN1_FR_🇫🇷_1
     type: ss
     server: 135.125.245.131
@@ -178,7 +205,7 @@ proxies:
     port: 35000
     password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
     sni: api.kermanshahi.org
-    skip-cert-verify: false
+    skip-cert-verify: true
     obfs: salamander
     obfs-password: "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
   - name: BolVPN1_NL_🇳🇱_14
@@ -387,7 +414,7 @@ proxies:
     port: 443
     password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
     sni: afrcloud1.mmv.kr
-    skip-cert-verify: false
+    skip-cert-verify: true
     tls: true
     ws-opts:
       path: /
@@ -417,7 +444,7 @@ proxies:
     port: 443
     password: humanity
     sni: www.multiplydose.com
-    skip-cert-verify: false
+    skip-cert-verify: true
     tls: true
     ws-opts:
       path: /assignment
@@ -433,7 +460,7 @@ proxies:
     port: 35000
     password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
     sni: api.kermanshahi.org
-    skip-cert-verify: false
+    skip-cert-verify: true
     obfs: salamander
     obfs-password: "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
   - name: BolVPN1_US_🇺🇸_39
@@ -502,7 +529,7 @@ proxies:
     port: 36600
     password: Yet-Another-Public-Config-1
     sni: YAPC-1.afshin.ir
-    skip-cert-verify: false
+    skip-cert-verify: true
     obfs: salamander
     obfs-password: Yet-Another-Public-Config-1
   - name: BolVPN1_CA_🇨🇦_45
@@ -666,7 +693,7 @@ proxies:
     network: ws
     tls: false
     ws-opts:
-      path: /FREE By Tharuwa (0767597317)
+      path: /FREE+By+Tharuwa+(0767597317)
       headers:
         Host: zoom.us
   - name: BolVPN1_JP_🇯🇵_61
@@ -926,7 +953,7 @@ proxies:
     port: 36600
     password: Yet-Another-Public-Config-1
     sni: YAPC-1.afshin.ir
-    skip-cert-verify: false
+    skip-cert-verify: true
     obfs: salamander
     obfs-password: Yet-Another-Public-Config-1
   - name: BolVPN1_US_🇺🇸_86
@@ -983,7 +1010,7 @@ proxies:
     port: 35000
     password: Yet-Another-Public-Config-1
     sni: YAPC-1.afshin.ir
-    skip-cert-verify: false
+    skip-cert-verify: true
     obfs: salamander
     obfs-password: Yet-Another-Public-Config-1
   - name: BolVPN1_US_🇺🇸_91
@@ -1096,6 +1123,9 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - کانفیگ ها امن نیستند.
+      - با فیلترشکن آپدیت کنید.
+      - هر 2 لینک در طی روز آپدیت میشوند.
       - BolVPN1_FR_🇫🇷_1
       - BolVPN1_FR_🇫🇷_2
       - BolVPN1_FR_🇫🇷_3
@@ -1199,6 +1229,9 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     proxies:
+      - کانفیگ ها امن نیستند.
+      - با فیلترشکن آپدیت کنید.
+      - هر 2 لینک در طی روز آپدیت میشوند.
       - BolVPN1_FR_🇫🇷_1
       - BolVPN1_FR_🇫🇷_2
       - BolVPN1_FR_🇫🇷_3
@@ -1308,6 +1341,9 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - کانفیگ ها امن نیستند.
+      - با فیلترشکن آپدیت کنید.
+      - هر 2 لینک در طی روز آپدیت میشوند.
       - BolVPN1_FR_🇫🇷_1
       - BolVPN1_FR_🇫🇷_2
       - BolVPN1_FR_🇫🇷_3
@@ -1413,6 +1449,9 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - کانفیگ ها امن نیستند.
+      - با فیلترشکن آپدیت کنید.
+      - هر 2 لینک در طی روز آپدیت میشوند.
       - BolVPN1_FR_🇫🇷_1
       - BolVPN1_FR_🇫🇷_2
       - BolVPN1_FR_🇫🇷_3
@@ -1518,6 +1557,9 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - کانفیگ ها امن نیستند.
+      - با فیلترشکن آپدیت کنید.
+      - هر 2 لینک در طی روز آپدیت میشوند.
       - BolVPN1_FR_🇫🇷_1
       - BolVPN1_FR_🇫🇷_2
       - BolVPN1_FR_🇫🇷_3
@@ -1623,6 +1665,9 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - کانفیگ ها امن نیستند.
+      - با فیلترشکن آپدیت کنید.
+      - هر 2 لینک در طی روز آپدیت میشوند.
       - BolVPN1_FR_🇫🇷_1
       - BolVPN1_FR_🇫🇷_2
       - BolVPN1_FR_🇫🇷_3
@@ -1745,6 +1790,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - کانفیگ ها امن نیستند.
+      - با فیلترشکن آپدیت کنید.
+      - هر 2 لینک در طی روز آپدیت میشوند.
       - BolVPN1_FR_🇫🇷_1
       - BolVPN1_FR_🇫🇷_2
       - BolVPN1_FR_🇫🇷_3
