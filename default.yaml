@@ -46,45 +46,6 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: کانفیگ ها امن نیستند.
-    type: vless
-    server: 0.0.0.1
-    port: 443
-    uuid: 00000000-0000-0000-0000-000000000000
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-  - name: با فیلترشکن آپدیت کنید.
-    type: vless
-    server: 127.0.0.1
-    port: 443
-    uuid: 00000000-0000-0000-0000-000000000000
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-  - name: هر 2 لینک در طی روز آپدیت میشوند.
-    type: vless
-    server: 127.0.0.1
-    port: 444
-    uuid: 00000000-0000-0000-0000-000000000000
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-  - name: BolVPN1_FR_🇫🇷_1
-    type: ss
-    server: 135.125.245.131
-    port: 20939
-    cipher: chacha20-ietf-poly1305
-    password: 85d3d8ccba287d3e
-  - name: BolVPN1_FR_🇫🇷_2
-    type: ss
-    server: 141.95.109.94
-    port: 11201
-    cipher: chacha20-ietf-poly1305
-    password: 10f90af92b6c1a74
   - name: BolVPN1_FR_🇫🇷_3
     type: vmess
     server: 57.129.25.20
@@ -99,181 +60,6 @@ proxies:
       path: linkvws
       headers:
         Host: 57.129.25.20
-  - name: BolVPN1_GB_🇬🇧_4
-    type: ss
-    server: 51.89.117.154
-    port: 11201
-    cipher: chacha20-ietf-poly1305
-    password: 9bfee1388e960537
-  - name: BolVPN1_GB_🇬🇧_5
-    type: ss
-    server: 51.89.118.58
-    port: 11201
-    cipher: chacha20-ietf-poly1305
-    password: 7a63df1a001759bf
-  - name: BolVPN1_HK_🇭🇰_6
-    type: vless
-    server: 2026.01.1.de.aimirror.top
-    port: 443
-    uuid: eeaa07ca-2693-42f8-e544-a16521d8e922
-    servername: www.icloud.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    reality-opts:
-      public-key: v72GjbmsDf-N2ZAdZwgIGgxy7lpMQ2W1HszfTzB0fEo
-  - name: BolVPN1_FR_🇫🇷_7
-    type: vless
-    server: 57.129.49.1
-    port: 23576
-    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-    servername: fuck.rkn
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-      short-id: "01"
-  - name: BolVPN1___8
-    type: trojan
-    server: 104.17.163.123
-    port: 8443
-    password: x79svebo1f7b
-    sni: 5m2b654fvfrv.zjde5.de5.net
-    alpn:
-      - http/1.1
-    skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: 5m2b654fvfrv.zjde5.de5.net
-  - name: BolVPN1_US_🇺🇸_9
-    type: vless
-    server: nodejs.org
-    port: 80
-    uuid: ba2bb9d8-9baa-45d6-9e0a-38c9cb6a6a9a
-    network: ws
-    tls: false
-    ws-opts:
-      path: /?ed
-      headers:
-        Host: WeaK-preSSUrE3Ga6bzof92.sPorTlaNd.coMPANY.
-  - name: BolVPN1___10
-    type: trojan
-    server: 104.17.165.123
-    port: 8443
-    password: 4wsc50fdyqeq
-    sni: rsosx0ofzeyjahe4gb4sk16zbzqfi4r7z2ubfujth9ebgf5tli7di.zjde5.de5.net
-    alpn:
-      - http/1.1
-    skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: rsosx0ofzeyjahe4gb4sk16zbzqfi4r7z2ubfujth9ebgf5tli7di.zjde5.de5.net
-  - name: BolVPN1___11
-    type: trojan
-    server: 104.17.165.123
-    port: 8443
-    password: 4wsc50fdyqeq
-    sni: rsosx0ofzeyjahe4gb4sk16zbzqfi4r7z2ubfujth9ebgf5tli7di.zjde5.de5.net
-    alpn:
-      - http/1.1
-    skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: rsosx0ofzeyjahe4gb4sk16zbzqfi4r7z2ubfujth9ebgf5tli7di.zjde5.de5.net
-  - name: BolVPN1_FR_🇫🇷_12
-    type: vless
-    server: 57.129.53.181
-    port: 23576
-    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-    servername: fuck.rkn
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-      short-id: "01"
-  - name: BolVPN1_DE_🇩🇪_13
-    type: hysteria2
-    server: 181.214.231.121
-    port: 35000
-    password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
-    sni: api.kermanshahi.org
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
-  - name: BolVPN1_NL_🇳🇱_14
-    type: trojan
-    server: 188.114.97.132
-    port: 443
-    password: 67db77a5-2171-41e4-8a30-91fa5c11ddf6
-    sni: afrcloud4.mmv.kr
-    skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /194.127.193.240:50791
-      headers:
-        Host: afrcloud4.mmv.kr
-  - name: BolVPN1_FR_🇫🇷_15
-    type: ss
-    server: 51.68.83.117
-    port: 11201
-    cipher: chacha20-ietf-poly1305
-    password: f19e359a2f0c4f5f
-  - name: BolVPN1_US_🇺🇸_16
-    type: vless
-    server: nodejs.org
-    port: 80
-    uuid: 546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f
-    network: ws
-    tls: false
-    ws-opts:
-      path: /?ed#Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN?ed=512
-      headers:
-        Host: bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.
-  - name: BolVPN1_GB_🇬🇧_17
-    type: vless
-    server: uk1.miyazono-kaori.com
-    port: 443
-    uuid: 937f8940-ad8a-409f-93c3-4d6249af628f
-    servername: www.bp.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: ios
-    reality-opts:
-      public-key: _dsOu_vxEU7pY3sIeGJxIpR0Ac2KoqIyBor2Bx0CwGA
-      short-id: d923
-  - name: BolVPN1___18
-    type: trojan
-    server: 104.17.164.123
-    port: 8443
-    password: 3ljg5jx8ypwc
-    sni: 8ifr3yt3q8f1re.zjde5.de5.net
-    alpn:
-      - http/1.1
-    skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: 8ifr3yt3q8f1re.zjde5.de5.net
-  - name: BolVPN1_US_🇺🇸_19
-    type: vless
-    server: pi.hamrahto.com
-    port: 80
-    uuid: 90bca418-0643-49ad-9ec7-f3e708081ebd
-    network: ws
-    tls: false
-    ws-opts:
-      path: /index
-      headers:
-        Host: Vipsi.com
   - name: BolVPN1_PL_🇵🇱_20
     type: vmess
     server: 146.59.118.250
@@ -315,17 +101,6 @@ proxies:
       path: /vmess
       headers:
         Host: france-paris.hostinger.kcartik-vps.com
-  - name: BolVPN1_US_🇺🇸_23
-    type: vless
-    server: nodejs.org
-    port: 80
-    uuid: 546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f
-    network: ws
-    tls: false
-    ws-opts:
-      path: /?ed
-      headers:
-        Host: bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.
   - name: BolVPN1___24
     type: vmess
     server: cf-proxy.202507.xyz
@@ -340,6 +115,210 @@ proxies:
       path: /
       headers:
         Host: gb.202507.xyz
+  - name: BolVPN1_CA_🇨🇦_41
+    type: vmess
+    server: 148.113.176.192
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: fapeng.org
+    network: ws
+    ws-opts:
+      path: linkvws
+  - name: BolVPN1_CA_🇨🇦_42
+    type: vmess
+    server: 15.235.83.227
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    network: ws
+    ws-opts:
+      path: /linkvws
+      headers:
+        Host: mankadmu.com
+  - name: BolVPN1_CA_🇨🇦_47
+    type: vmess
+    server: 158.51.121.63
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: seribus.org
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: seribus.org
+  - name: BolVPN1_MY_🇲🇾_54
+    type: vmess
+    server: 47.250.45.234
+    port: 43063
+    uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /arki
+  - name: BolVPN1_FR_🇫🇷_65
+    type: vmess
+    server: 57.129.64.238
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: kapelleng.com
+    network: ws
+    ws-opts:
+      path: /linkvws
+      headers:
+        Host: kapelleng.com
+  - name: BolVPN1_CA_🇨🇦_75
+    type: vmess
+    server: 134.195.198.147
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /linkvws
+      headers:
+        Host: inna.cfd
+  - name: BolVPN1_US_🇺🇸_77
+    type: vmess
+    server: chatgpt.com
+    port: 8443
+    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: c7.620720.xyz
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: c7.620720.xyz
+  - name: BolVPN1_US_🇺🇸_79
+    type: vmess
+    server: 172.234.132.232
+    port: 10001
+    uuid: a6b99c05-8e0a-4f7e-bf7b-e4b9febb9589
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: BolVPN1_US_🇺🇸_80
+    type: vmess
+    server: 172.233.229.91
+    port: 14102
+    uuid: 27ba87fc-583f-4763-9060-83cf0b9264db
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: BolVPN1_US_🇺🇸_87
+    type: vmess
+    server: 209.126.84.189
+    port: 443
+    uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: 209.126.84.189
+  - name: BolVPN1_CA_🇨🇦_89
+    type: vmess
+    server: 134.195.198.147
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /linkvws
+  - name: BolVPN1_IR_🇮🇷_93
+    type: vmess
+    server: mv7.multipubg.com
+    port: 80
+    uuid: eaec8713-fc4d-465c-a7e6-e5ba034e3263
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+  - name: BolVPN1_CA_🇨🇦_94
+    type: vmess
+    server: 15.235.83.228
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: lammaland.org
+    network: ws
+    ws-opts:
+      path: linkvws
+      headers:
+        Host: lammaland.org
+  - name: BolVPN1_FR_🇫🇷_98
+    type: ss
+    server: 141.95.104.145
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 4f032d993dfec318
+  - name: BolVPN1_FR_🇫🇷_1
+    type: ss
+    server: 135.125.245.131
+    port: 20939
+    cipher: chacha20-ietf-poly1305
+    password: 85d3d8ccba287d3e
+  - name: BolVPN1_FR_🇫🇷_2
+    type: ss
+    server: 141.95.109.94
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 10f90af92b6c1a74
+  - name: BolVPN1_GB_🇬🇧_4
+    type: ss
+    server: 51.89.117.154
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 9bfee1388e960537
+  - name: BolVPN1_GB_🇬🇧_5
+    type: ss
+    server: 51.89.118.58
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 7a63df1a001759bf
+  - name: BolVPN1_FR_🇫🇷_15
+    type: ss
+    server: 51.68.83.117
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: f19e359a2f0c4f5f
   - name: BolVPN1_RU_🇷🇺_25
     type: ss
     server: 45.144.31.24
@@ -352,6 +331,172 @@ proxies:
     port: 8080
     cipher: chacha20-ietf-poly1305
     password: k1dBOmOB4oqi7Ump37a1bQ
+  - name: BolVPN1_FR_🇫🇷_37
+    type: ss
+    server: 51.68.146.248
+    port: 10011
+    cipher: chacha20-ietf-poly1305
+    password: a792ff4b517fdf1c
+  - name: BolVPN1_CA_🇨🇦_45
+    type: ss
+    server: 148.113.143.102
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 8d90009fa5023cfa
+  - name: BolVPN1_FR_🇫🇷_64
+    type: ss
+    server: 54.37.78.193
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 267514960a86907d
+  - name: BolVPN1_FR_🇫🇷_66
+    type: ss
+    server: 141.95.109.160
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 823cdb94a457faee
+  - name: BolVPN1_FR_🇫🇷_72
+    type: ss
+    server: 54.37.77.214
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: c0fb2805ee931691
+  - name: BolVPN1_FR_🇫🇷_81
+    type: ss
+    server: 57.129.69.122
+    port: 27130
+    cipher: chacha20-ietf-poly1305
+    password: a3027c931ae07bce
+  - name: BolVPN1_GB_🇬🇧_83
+    type: ss
+    server: 82.38.31.210
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+  - name: BolVPN1_FR_🇫🇷_95
+    type: ss
+    server: 141.95.105.96
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 1b5d1bff76cae87c
+  - name: کانفیگ ها امن نیستند.
+    type: vless
+    server: 0.0.0.1
+    port: 443
+    uuid: 00000000-0000-0000-0000-000000000000
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+  - name: با فیلترشکن آپدیت کنید.
+    type: vless
+    server: 127.0.0.1
+    port: 443
+    uuid: 00000000-0000-0000-0000-000000000000
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+  - name: هر 2 لینک در طی روز آپدیت میشوند.
+    type: vless
+    server: 127.0.0.1
+    port: 444
+    uuid: 00000000-0000-0000-0000-000000000000
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+  - name: BolVPN1_HK_🇭🇰_6
+    type: vless
+    server: 2026.01.1.de.aimirror.top
+    port: 443
+    uuid: eeaa07ca-2693-42f8-e544-a16521d8e922
+    servername: www.icloud.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: safari
+    reality-opts:
+      public-key: v72GjbmsDf-N2ZAdZwgIGgxy7lpMQ2W1HszfTzB0fEo
+  - name: BolVPN1_FR_🇫🇷_7
+    type: vless
+    server: 57.129.49.1
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVPN1_US_🇺🇸_9
+    type: vless
+    server: nodejs.org
+    port: 80
+    uuid: ba2bb9d8-9baa-45d6-9e0a-38c9cb6a6a9a
+    network: ws
+    tls: false
+    ws-opts:
+      path: /?ed
+      headers:
+        Host: WeaK-preSSUrE3Ga6bzof92.sPorTlaNd.coMPANY.
+  - name: BolVPN1_FR_🇫🇷_12
+    type: vless
+    server: 57.129.53.181
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: BolVPN1_US_🇺🇸_16
+    type: vless
+    server: nodejs.org
+    port: 80
+    uuid: 546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f
+    network: ws
+    tls: false
+    ws-opts:
+      path: /?ed#Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN?ed=512
+      headers:
+        Host: bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.
+  - name: BolVPN1_GB_🇬🇧_17
+    type: vless
+    server: uk1.miyazono-kaori.com
+    port: 443
+    uuid: 937f8940-ad8a-409f-93c3-4d6249af628f
+    servername: www.bp.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: ios
+    reality-opts:
+      public-key: _dsOu_vxEU7pY3sIeGJxIpR0Ac2KoqIyBor2Bx0CwGA
+      short-id: d923
+  - name: BolVPN1_US_🇺🇸_19
+    type: vless
+    server: pi.hamrahto.com
+    port: 80
+    uuid: 90bca418-0643-49ad-9ec7-f3e708081ebd
+    network: ws
+    tls: false
+    ws-opts:
+      path: /index
+      headers:
+        Host: Vipsi.com
+  - name: BolVPN1_US_🇺🇸_23
+    type: vless
+    server: nodejs.org
+    port: 80
+    uuid: 546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f
+    network: ws
+    tls: false
+    ws-opts:
+      path: /?ed
+      headers:
+        Host: bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.
   - name: BolVPN1_DK_🇩🇰_27
     type: vless
     server: 95.164.85.109
@@ -408,16 +553,6 @@ proxies:
       path: /
       headers:
         Host: 0I9j5A79eE.gIgAcOnFaPp.InFo
-  - name: BolVPN1_US_🇺🇸_33
-    type: trojan
-    server: afrcloud1.mmv.kr
-    port: 443
-    password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
-    sni: afrcloud1.mmv.kr
-    skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /
   - name: BolVPN1_GB_🇬🇧_34
     type: vless
     server: es-1.seemsflower.ru
@@ -438,31 +573,6 @@ proxies:
     tls: false
     ws-opts:
       path: /
-  - name: BolVPN1_NL_🇳🇱_36
-    type: trojan
-    server: 188.114.98.0
-    port: 443
-    password: humanity
-    sni: www.multiplydose.com
-    skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /assignment
-  - name: BolVPN1_FR_🇫🇷_37
-    type: ss
-    server: 51.68.146.248
-    port: 10011
-    cipher: chacha20-ietf-poly1305
-    password: a792ff4b517fdf1c
-  - name: BolVPN1_US_🇺🇸_38
-    type: hysteria2
-    server: 206.71.158.41
-    port: 35000
-    password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
-    sni: api.kermanshahi.org
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
   - name: BolVPN1_US_🇺🇸_39
     type: vless
     server: chatgpt.com
@@ -484,34 +594,6 @@ proxies:
       path: /news
       headers:
         Host: cdn.ir
-  - name: BolVPN1_CA_🇨🇦_41
-    type: vmess
-    server: 148.113.176.192
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    servername: fapeng.org
-    network: ws
-    ws-opts:
-      path: linkvws
-  - name: BolVPN1_CA_🇨🇦_42
-    type: vmess
-    server: 15.235.83.227
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    network: ws
-    ws-opts:
-      path: /linkvws
-      headers:
-        Host: mankadmu.com
   - name: BolVPN1_US_🇺🇸_43
     type: vless
     server: 137.184.218.169
@@ -523,21 +605,6 @@ proxies:
     client-fingerprint: chrome
     reality-opts:
       public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-  - name: BolVPN1_US_🇺🇸_44
-    type: hysteria2
-    server: yapc-1.adamhayward.co.uk
-    port: 36600
-    password: Yet-Another-Public-Config-1
-    sni: YAPC-1.afshin.ir
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: Yet-Another-Public-Config-1
-  - name: BolVPN1_CA_🇨🇦_45
-    type: ss
-    server: 148.113.143.102
-    port: 11201
-    cipher: chacha20-ietf-poly1305
-    password: 8d90009fa5023cfa
   - name: BolVPN1_US_🇺🇸_46
     type: vless
     server: fl-1.bot-iphone.ru
@@ -550,30 +617,6 @@ proxies:
     reality-opts:
       public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
       short-id: 6ba85179e30d4fc2
-  - name: BolVPN1_CA_🇨🇦_47
-    type: vmess
-    server: 158.51.121.63
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    servername: seribus.org
-    network: ws
-    ws-opts:
-      path: linkvws
-      headers:
-        Host: seribus.org
-  - name: BolVPN1_US_🇺🇸_48
-    type: hysteria2
-    server: 206.71.158.37
-    port: 35200
-    password: Yet-Another-Public-Config-1
-    sni: YAPC-1.afshin.ir
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: Yet-Another-Public-Config-1
   - name: BolVPN1_RU_🇷🇺_49
     type: vless
     server: 83.222.23.81
@@ -633,40 +676,12 @@ proxies:
     reality-opts:
       public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
       short-id: "01"
-  - name: BolVPN1_MY_🇲🇾_54
-    type: vmess
-    server: 47.250.45.234
-    port: 43063
-    uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /arki
   - name: BolVPN1_IR_🇮🇷_55
     type: vless
     server: 94.183.170.218
     port: 2053
     uuid: b611e0a7-b01b-4dfa-aadc-f61dcf8dd6f2
     tls: false
-  - name: BolVPN1_JP_🇯🇵_56
-    type: trojan
-    server: 160.16.70.180
-    port: 3901
-    password: 869e9086806483ca4744a4cb0f3d6e16
-    sni: www.nintendogames.net
-    skip-cert-verify: true
-    tls: true
-  - name: BolVPN1_HK_🇭🇰_57
-    type: trojan
-    server: 219.76.135.98
-    port: 443
-    password: BxceQaOe
-    sni: 219.76.135.98
-    skip-cert-verify: true
-    tls: true
   - name: BolVPN1_US_🇺🇸_58
     type: vless
     server: 15.204.97.165
@@ -725,47 +740,6 @@ proxies:
     servername: /?---@Azarbayjab1_Net---@Azarbayjab1_Net---@azarbayjab1_Net---@azarbayjab1_Net---@Azarbayjab1_Net
     tls: false
     client-fingerprint: chrome
-  - name: BolVPN1_FR_🇫🇷_64
-    type: ss
-    server: 54.37.78.193
-    port: 11201
-    cipher: chacha20-ietf-poly1305
-    password: 267514960a86907d
-  - name: BolVPN1_FR_🇫🇷_65
-    type: vmess
-    server: 57.129.64.238
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    servername: kapelleng.com
-    network: ws
-    ws-opts:
-      path: /linkvws
-      headers:
-        Host: kapelleng.com
-  - name: BolVPN1_FR_🇫🇷_66
-    type: ss
-    server: 141.95.109.160
-    port: 11201
-    cipher: chacha20-ietf-poly1305
-    password: 823cdb94a457faee
-  - name: BolVPN1_US_🇺🇸_67
-    type: trojan
-    server: 172.64.149.99
-    port: 8443
-    password: tw04krrjv1m6
-    sni: yn3l39ghsfzlhk1xh0pbywn3rtfr2.zjde5.de5.net
-    alpn:
-      - http/1.1
-    skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: yn3l39ghsfzlhk1xh0pbywn3rtfr2.zjde5.de5.net
   - name: BolVPN1___68
     type: vless
     server: salamsalamirancell.aattaash.com
@@ -789,14 +763,6 @@ proxies:
     reality-opts:
       public-key: 76Cfr5qNl9BCrSb6jdkrgj0HbwfyCwj4oF6JJVhKD0s
       short-id: 42d7234d875308a2
-  - name: BolVPN1_US_🇺🇸_70
-    type: trojan
-    server: vn.yiciyuanquicken.online
-    port: 27638
-    password: d51abb35-94a4-4529-9244-2808beaa4624
-    sni: vn.yiciyuanquicken.online
-    skip-cert-verify: true
-    tls: true
   - name: BolVPN1_US_🇺🇸_71
     type: vless
     server: nodejs.org
@@ -808,12 +774,6 @@ proxies:
       path: /?ed
       headers:
         Host: HUge-ActOR48bf36fHJV.ecOTouriSS.co.uK.
-  - name: BolVPN1_FR_🇫🇷_72
-    type: ss
-    server: 54.37.77.214
-    port: 11201
-    cipher: chacha20-ietf-poly1305
-    password: c0fb2805ee931691
   - name: BolVPN1___73
     type: vless
     server: 198.41.203.22
@@ -838,20 +798,6 @@ proxies:
       path: /vless/
       headers:
         Host: ov-canada1.09vpn.com
-  - name: BolVPN1_CA_🇨🇦_75
-    type: vmess
-    server: 134.195.198.147
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /linkvws
-      headers:
-        Host: inna.cfd
   - name: BolVPN1_US_🇺🇸_76
     type: vless
     server: 172.64.152.23
@@ -865,21 +811,6 @@ proxies:
       path: /?TELEGRAM--JKVPN--JKVPN--JKVPN
       headers:
         Host: h11-2.parskish.online
-  - name: BolVPN1_US_🇺🇸_77
-    type: vmess
-    server: chatgpt.com
-    port: 8443
-    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    servername: c7.620720.xyz
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: c7.620720.xyz
   - name: BolVPN1_US_🇺🇸_78
     type: vless
     server: 172.67.211.13
@@ -893,30 +824,6 @@ proxies:
       path: /AbriVPN---AbriVPN---AbriVPN---AbriVPN---AbriVPN---AbriVPN---AbriVPN---AbriVPN---
       headers:
         Host: abriabri.abriabri.ir
-  - name: BolVPN1_US_🇺🇸_79
-    type: vmess
-    server: 172.234.132.232
-    port: 10001
-    uuid: a6b99c05-8e0a-4f7e-bf7b-e4b9febb9589
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: BolVPN1_US_🇺🇸_80
-    type: vmess
-    server: 172.233.229.91
-    port: 14102
-    uuid: 27ba87fc-583f-4763-9060-83cf0b9264db
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: BolVPN1_FR_🇫🇷_81
-    type: ss
-    server: 57.129.69.122
-    port: 27130
-    cipher: chacha20-ietf-poly1305
-    password: a3027c931ae07bce
   - name: BolVPN1_US_🇺🇸_82
     type: vless
     server: 15.204.97.172
@@ -929,12 +836,6 @@ proxies:
     reality-opts:
       public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
       short-id: "01"
-  - name: BolVPN1_GB_🇬🇧_83
-    type: ss
-    server: 82.38.31.210
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
   - name: BolVPN1_US_🇺🇸_84
     type: vless
     server: 15.204.97.164
@@ -947,15 +848,6 @@ proxies:
     reality-opts:
       public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
       short-id: "01"
-  - name: BolVPN1_US_🇺🇸_85
-    type: hysteria2
-    server: 206.71.158.37
-    port: 36600
-    password: Yet-Another-Public-Config-1
-    sni: YAPC-1.afshin.ir
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: Yet-Another-Public-Config-1
   - name: BolVPN1_US_🇺🇸_86
     type: vless
     server: 15.204.97.155
@@ -968,51 +860,6 @@ proxies:
     reality-opts:
       public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
       short-id: "01"
-  - name: BolVPN1_US_🇺🇸_87
-    type: vmess
-    server: 209.126.84.189
-    port: 443
-    uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: 209.126.84.189
-  - name: BolVPN1___88
-    type: trojan
-    server: www.multiplydose.com
-    port: 443
-    password: humanity
-    sni: www.multiplydose.com
-    skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /assignment
-  - name: BolVPN1_CA_🇨🇦_89
-    type: vmess
-    server: 134.195.198.147
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /linkvws
-  - name: BolVPN1_US_🇺🇸_90
-    type: hysteria2
-    server: 206.71.158.37
-    port: 35000
-    password: Yet-Another-Public-Config-1
-    sni: YAPC-1.afshin.ir
-    skip-cert-verify: true
-    obfs: salamander
-    obfs-password: Yet-Another-Public-Config-1
   - name: BolVPN1_US_🇺🇸_91
     type: vless
     server: nodejs.org
@@ -1024,45 +871,6 @@ proxies:
       path: /?ed
       headers:
         Host: EqUiPPed-phOToZkoA7K5e6P.eCoTOuRiss.Co.uk.
-  - name: BolVPN1_JP_🇯🇵_92
-    type: trojan
-    server: 160.16.132.38
-    port: 5076
-    password: 869e9086806483ca4744a4cb0f3d6e16
-    sni: www.nintendogames.net
-    skip-cert-verify: true
-    tls: true
-  - name: BolVPN1_IR_🇮🇷_93
-    type: vmess
-    server: mv7.multipubg.com
-    port: 80
-    uuid: eaec8713-fc4d-465c-a7e6-e5ba034e3263
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-  - name: BolVPN1_CA_🇨🇦_94
-    type: vmess
-    server: 15.235.83.228
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    servername: lammaland.org
-    network: ws
-    ws-opts:
-      path: linkvws
-      headers:
-        Host: lammaland.org
-  - name: BolVPN1_FR_🇫🇷_95
-    type: ss
-    server: 141.95.105.96
-    port: 11201
-    cipher: chacha20-ietf-poly1305
-    password: 1b5d1bff76cae87c
   - name: BolVPN1_US_🇺🇸_96
     type: vless
     server: 15.204.97.169
@@ -1075,27 +883,6 @@ proxies:
     reality-opts:
       public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
       short-id: "01"
-  - name: BolVPN1_CA_🇨🇦_97
-    type: vmess
-    server: 158.51.121.63
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    servername: seribus.org
-    network: ws
-    ws-opts:
-      path: linkvws
-      headers:
-        Host: seribus.org
-  - name: BolVPN1_FR_🇫🇷_98
-    type: ss
-    server: 141.95.104.145
-    port: 11201
-    cipher: chacha20-ietf-poly1305
-    password: 4f032d993dfec318
   - name: BolVPN1_US_🇺🇸_99
     type: vless
     server: 15.204.97.219
@@ -1117,221 +904,427 @@ proxies:
     servername: /?---@Azarbayjab1_Net---@Azarbayjab1_Net---@azarbayjab1_Net---@azarbayjab1_Net---@Azarbayjab1_Net
     tls: false
     client-fingerprint: chrome
+  - name: BolVPN1___8
+    type: trojan
+    server: 104.17.163.123
+    port: 8443
+    password: x79svebo1f7b
+    sni: 5m2b654fvfrv.zjde5.de5.net
+    alpn:
+      - http/1.1
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: 5m2b654fvfrv.zjde5.de5.net
+  - name: BolVPN1___10
+    type: trojan
+    server: 104.17.165.123
+    port: 8443
+    password: 4wsc50fdyqeq
+    sni: rsosx0ofzeyjahe4gb4sk16zbzqfi4r7z2ubfujth9ebgf5tli7di.zjde5.de5.net
+    alpn:
+      - http/1.1
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: rsosx0ofzeyjahe4gb4sk16zbzqfi4r7z2ubfujth9ebgf5tli7di.zjde5.de5.net
+  - name: BolVPN1___11
+    type: trojan
+    server: 104.17.165.123
+    port: 8443
+    password: 4wsc50fdyqeq
+    sni: rsosx0ofzeyjahe4gb4sk16zbzqfi4r7z2ubfujth9ebgf5tli7di.zjde5.de5.net
+    alpn:
+      - http/1.1
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: rsosx0ofzeyjahe4gb4sk16zbzqfi4r7z2ubfujth9ebgf5tli7di.zjde5.de5.net
+  - name: BolVPN1_NL_🇳🇱_14
+    type: trojan
+    server: 188.114.97.132
+    port: 443
+    password: 67db77a5-2171-41e4-8a30-91fa5c11ddf6
+    sni: afrcloud4.mmv.kr
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /194.127.193.240:50791
+      headers:
+        Host: afrcloud4.mmv.kr
+  - name: BolVPN1___18
+    type: trojan
+    server: 104.17.164.123
+    port: 8443
+    password: 3ljg5jx8ypwc
+    sni: 8ifr3yt3q8f1re.zjde5.de5.net
+    alpn:
+      - http/1.1
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: 8ifr3yt3q8f1re.zjde5.de5.net
+  - name: BolVPN1_US_🇺🇸_33
+    type: trojan
+    server: afrcloud1.mmv.kr
+    port: 443
+    password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
+    sni: afrcloud1.mmv.kr
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /
+  - name: BolVPN1_NL_🇳🇱_36
+    type: trojan
+    server: 188.114.98.0
+    port: 443
+    password: humanity
+    sni: www.multiplydose.com
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /assignment
+  - name: BolVPN1_JP_🇯🇵_56
+    type: trojan
+    server: 160.16.70.180
+    port: 3901
+    password: 869e9086806483ca4744a4cb0f3d6e16
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+    tls: true
+  - name: BolVPN1_HK_🇭🇰_57
+    type: trojan
+    server: 219.76.135.98
+    port: 443
+    password: BxceQaOe
+    sni: 219.76.135.98
+    skip-cert-verify: true
+    tls: true
+  - name: BolVPN1_US_🇺🇸_67
+    type: trojan
+    server: 172.64.149.99
+    port: 8443
+    password: tw04krrjv1m6
+    sni: yn3l39ghsfzlhk1xh0pbywn3rtfr2.zjde5.de5.net
+    alpn:
+      - http/1.1
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: yn3l39ghsfzlhk1xh0pbywn3rtfr2.zjde5.de5.net
+  - name: BolVPN1_US_🇺🇸_70
+    type: trojan
+    server: vn.yiciyuanquicken.online
+    port: 27638
+    password: d51abb35-94a4-4529-9244-2808beaa4624
+    sni: vn.yiciyuanquicken.online
+    skip-cert-verify: true
+    tls: true
+  - name: BolVPN1___88
+    type: trojan
+    server: www.multiplydose.com
+    port: 443
+    password: humanity
+    sni: www.multiplydose.com
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /assignment
+  - name: BolVPN1_JP_🇯🇵_92
+    type: trojan
+    server: 160.16.132.38
+    port: 5076
+    password: 869e9086806483ca4744a4cb0f3d6e16
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+    tls: true
+  - name: BolVPN1_DE_🇩🇪_13
+    type: hysteria2
+    server: 181.214.231.121
+    port: 35000
+    password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
+    sni: api.kermanshahi.org
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
+  - name: BolVPN1_US_🇺🇸_38
+    type: hysteria2
+    server: 206.71.158.41
+    port: 35000
+    password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
+    sni: api.kermanshahi.org
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
+  - name: BolVPN1_US_🇺🇸_44
+    type: hysteria2
+    server: yapc-1.adamhayward.co.uk
+    port: 36600
+    password: Yet-Another-Public-Config-1
+    sni: YAPC-1.afshin.ir
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: Yet-Another-Public-Config-1
+  - name: BolVPN1_US_🇺🇸_48
+    type: hysteria2
+    server: 206.71.158.37
+    port: 35200
+    password: Yet-Another-Public-Config-1
+    sni: YAPC-1.afshin.ir
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: Yet-Another-Public-Config-1
+  - name: BolVPN1_US_🇺🇸_85
+    type: hysteria2
+    server: 206.71.158.37
+    port: 36600
+    password: Yet-Another-Public-Config-1
+    sni: YAPC-1.afshin.ir
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: Yet-Another-Public-Config-1
+  - name: BolVPN1_US_🇺🇸_90
+    type: hysteria2
+    server: 206.71.158.37
+    port: 35000
+    password: Yet-Another-Public-Config-1
+    sni: YAPC-1.afshin.ir
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: Yet-Another-Public-Config-1
+  - name: BolVpn2_TW_🇹🇼
+    type: trojan
+    server: green2.cdntencentmusic.com
+    port: 31101
+    password: 602c3ca9-8cbf-4f35-bdfc-fd38b38f7972
+    sni: green2.cdntencentmusic.com
+    skip-cert-verify: true
+    tls: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - کانفیگ ها امن نیستند.
-      - با فیلترشکن آپدیت کنید.
-      - هر 2 لینک در طی روز آپدیت میشوند.
-      - BolVPN1_FR_🇫🇷_1
-      - BolVPN1_FR_🇫🇷_2
       - BolVPN1_FR_🇫🇷_3
-      - BolVPN1_GB_🇬🇧_4
-      - BolVPN1_GB_🇬🇧_5
-      - BolVPN1_HK_🇭🇰_6
-      - BolVPN1_FR_🇫🇷_7
-      - BolVPN1___8
-      - BolVPN1_US_🇺🇸_9
-      - BolVPN1___10
-      - BolVPN1___11
-      - BolVPN1_FR_🇫🇷_12
-      - BolVPN1_DE_🇩🇪_13
-      - BolVPN1_NL_🇳🇱_14
-      - BolVPN1_FR_🇫🇷_15
-      - BolVPN1_US_🇺🇸_16
-      - BolVPN1_GB_🇬🇧_17
-      - BolVPN1___18
-      - BolVPN1_US_🇺🇸_19
       - BolVPN1_PL_🇵🇱_20
       - BolVPN1_FR_🇫🇷_21
       - BolVPN1_US_🇺🇸_22
-      - BolVPN1_US_🇺🇸_23
       - BolVPN1___24
+      - BolVPN1_CA_🇨🇦_41
+      - BolVPN1_CA_🇨🇦_42
+      - BolVPN1_CA_🇨🇦_47
+      - BolVPN1_MY_🇲🇾_54
+      - BolVPN1_FR_🇫🇷_65
+      - BolVPN1_CA_🇨🇦_75
+      - BolVPN1_US_🇺🇸_77
+      - BolVPN1_US_🇺🇸_79
+      - BolVPN1_US_🇺🇸_80
+      - BolVPN1_US_🇺🇸_87
+      - BolVPN1_CA_🇨🇦_89
+      - BolVPN1_IR_🇮🇷_93
+      - BolVPN1_CA_🇨🇦_94
+      - BolVPN1_FR_🇫🇷_98
+      - BolVPN1_FR_🇫🇷_1
+      - BolVPN1_FR_🇫🇷_2
+      - BolVPN1_GB_🇬🇧_4
+      - BolVPN1_GB_🇬🇧_5
+      - BolVPN1_FR_🇫🇷_15
       - BolVPN1_RU_🇷🇺_25
       - BolVPN1_GB_🇬🇧_26
+      - BolVPN1_FR_🇫🇷_37
+      - BolVPN1_CA_🇨🇦_45
+      - BolVPN1_FR_🇫🇷_64
+      - BolVPN1_FR_🇫🇷_66
+      - BolVPN1_FR_🇫🇷_72
+      - BolVPN1_FR_🇫🇷_81
+      - BolVPN1_GB_🇬🇧_83
+      - BolVPN1_FR_🇫🇷_95
+      - کانفیگ ها امن نیستند.
+      - با فیلترشکن آپدیت کنید.
+      - هر 2 لینک در طی روز آپدیت میشوند.
+      - BolVPN1_HK_🇭🇰_6
+      - BolVPN1_FR_🇫🇷_7
+      - BolVPN1_US_🇺🇸_9
+      - BolVPN1_FR_🇫🇷_12
+      - BolVPN1_US_🇺🇸_16
+      - BolVPN1_GB_🇬🇧_17
+      - BolVPN1_US_🇺🇸_19
+      - BolVPN1_US_🇺🇸_23
       - BolVPN1_DK_🇩🇰_27
       - BolVPN1_DE_🇩🇪_28
       - BolVPN1_DK_🇩🇰_29
       - BolVPN1_US_🇺🇸_30
       - BolVPN1_DE_🇩🇪_31
       - BolVPN1_NL_🇳🇱_32
-      - BolVPN1_US_🇺🇸_33
       - BolVPN1_GB_🇬🇧_34
       - BolVPN1___35
-      - BolVPN1_NL_🇳🇱_36
-      - BolVPN1_FR_🇫🇷_37
-      - BolVPN1_US_🇺🇸_38
       - BolVPN1_US_🇺🇸_39
       - BolVPN1_DE_🇩🇪_40
-      - BolVPN1_CA_🇨🇦_41
-      - BolVPN1_CA_🇨🇦_42
       - BolVPN1_US_🇺🇸_43
-      - BolVPN1_US_🇺🇸_44
-      - BolVPN1_CA_🇨🇦_45
       - BolVPN1_US_🇺🇸_46
-      - BolVPN1_CA_🇨🇦_47
-      - BolVPN1_US_🇺🇸_48
       - BolVPN1_RU_🇷🇺_49
       - BolVPN1_US_🇺🇸_50
       - BolVPN1_US_🇺🇸_51
       - BolVPN1_US_🇺🇸_52
       - BolVPN1_US_🇺🇸_53
-      - BolVPN1_MY_🇲🇾_54
       - BolVPN1_IR_🇮🇷_55
-      - BolVPN1_JP_🇯🇵_56
-      - BolVPN1_HK_🇭🇰_57
       - BolVPN1_US_🇺🇸_58
       - BolVPN1_IR_🇮🇷_59
       - BolVPN1_SG_🇸🇬_60
       - BolVPN1_JP_🇯🇵_61
       - BolVPN1_MX_🇲🇽_62
       - BolVPN1_MX_🇲🇽_63
-      - BolVPN1_FR_🇫🇷_64
-      - BolVPN1_FR_🇫🇷_65
-      - BolVPN1_FR_🇫🇷_66
-      - BolVPN1_US_🇺🇸_67
       - BolVPN1___68
       - BolVPN1_NL_🇳🇱_69
-      - BolVPN1_US_🇺🇸_70
       - BolVPN1_US_🇺🇸_71
-      - BolVPN1_FR_🇫🇷_72
       - BolVPN1___73
       - BolVPN1_US_🇺🇸_74
-      - BolVPN1_CA_🇨🇦_75
       - BolVPN1_US_🇺🇸_76
-      - BolVPN1_US_🇺🇸_77
       - BolVPN1_US_🇺🇸_78
-      - BolVPN1_US_🇺🇸_79
-      - BolVPN1_US_🇺🇸_80
-      - BolVPN1_FR_🇫🇷_81
       - BolVPN1_US_🇺🇸_82
-      - BolVPN1_GB_🇬🇧_83
       - BolVPN1_US_🇺🇸_84
-      - BolVPN1_US_🇺🇸_85
       - BolVPN1_US_🇺🇸_86
-      - BolVPN1_US_🇺🇸_87
-      - BolVPN1___88
-      - BolVPN1_CA_🇨🇦_89
-      - BolVPN1_US_🇺🇸_90
       - BolVPN1_US_🇺🇸_91
-      - BolVPN1_JP_🇯🇵_92
-      - BolVPN1_IR_🇮🇷_93
-      - BolVPN1_CA_🇨🇦_94
-      - BolVPN1_FR_🇫🇷_95
       - BolVPN1_US_🇺🇸_96
-      - BolVPN1_CA_🇨🇦_97
-      - BolVPN1_FR_🇫🇷_98
       - BolVPN1_US_🇺🇸_99
       - BolVPN1_MX_🇲🇽_100
+      - BolVPN1___8
+      - BolVPN1___10
+      - BolVPN1___11
+      - BolVPN1_NL_🇳🇱_14
+      - BolVPN1___18
+      - BolVPN1_US_🇺🇸_33
+      - BolVPN1_NL_🇳🇱_36
+      - BolVPN1_JP_🇯🇵_56
+      - BolVPN1_HK_🇭🇰_57
+      - BolVPN1_US_🇺🇸_67
+      - BolVPN1_US_🇺🇸_70
+      - BolVPN1___88
+      - BolVPN1_JP_🇯🇵_92
+      - BolVPN1_DE_🇩🇪_13
+      - BolVPN1_US_🇺🇸_38
+      - BolVPN1_US_🇺🇸_44
+      - BolVPN1_US_🇺🇸_48
+      - BolVPN1_US_🇺🇸_85
+      - BolVPN1_US_🇺🇸_90
+      - BolVpn2_TW_🇹🇼
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - کانفیگ ها امن نیستند.
-      - با فیلترشکن آپدیت کنید.
-      - هر 2 لینک در طی روز آپدیت میشوند.
-      - BolVPN1_FR_🇫🇷_1
-      - BolVPN1_FR_🇫🇷_2
       - BolVPN1_FR_🇫🇷_3
-      - BolVPN1_GB_🇬🇧_4
-      - BolVPN1_GB_🇬🇧_5
-      - BolVPN1_HK_🇭🇰_6
-      - BolVPN1_FR_🇫🇷_7
-      - BolVPN1___8
-      - BolVPN1_US_🇺🇸_9
-      - BolVPN1___10
-      - BolVPN1___11
-      - BolVPN1_FR_🇫🇷_12
-      - BolVPN1_DE_🇩🇪_13
-      - BolVPN1_NL_🇳🇱_14
-      - BolVPN1_FR_🇫🇷_15
-      - BolVPN1_US_🇺🇸_16
-      - BolVPN1_GB_🇬🇧_17
-      - BolVPN1___18
-      - BolVPN1_US_🇺🇸_19
       - BolVPN1_PL_🇵🇱_20
       - BolVPN1_FR_🇫🇷_21
       - BolVPN1_US_🇺🇸_22
-      - BolVPN1_US_🇺🇸_23
       - BolVPN1___24
+      - BolVPN1_CA_🇨🇦_41
+      - BolVPN1_CA_🇨🇦_42
+      - BolVPN1_CA_🇨🇦_47
+      - BolVPN1_MY_🇲🇾_54
+      - BolVPN1_FR_🇫🇷_65
+      - BolVPN1_CA_🇨🇦_75
+      - BolVPN1_US_🇺🇸_77
+      - BolVPN1_US_🇺🇸_79
+      - BolVPN1_US_🇺🇸_80
+      - BolVPN1_US_🇺🇸_87
+      - BolVPN1_CA_🇨🇦_89
+      - BolVPN1_IR_🇮🇷_93
+      - BolVPN1_CA_🇨🇦_94
+      - BolVPN1_FR_🇫🇷_98
+      - BolVPN1_FR_🇫🇷_1
+      - BolVPN1_FR_🇫🇷_2
+      - BolVPN1_GB_🇬🇧_4
+      - BolVPN1_GB_🇬🇧_5
+      - BolVPN1_FR_🇫🇷_15
       - BolVPN1_RU_🇷🇺_25
       - BolVPN1_GB_🇬🇧_26
+      - BolVPN1_FR_🇫🇷_37
+      - BolVPN1_CA_🇨🇦_45
+      - BolVPN1_FR_🇫🇷_64
+      - BolVPN1_FR_🇫🇷_66
+      - BolVPN1_FR_🇫🇷_72
+      - BolVPN1_FR_🇫🇷_81
+      - BolVPN1_GB_🇬🇧_83
+      - BolVPN1_FR_🇫🇷_95
+      - کانفیگ ها امن نیستند.
+      - با فیلترشکن آپدیت کنید.
+      - هر 2 لینک در طی روز آپدیت میشوند.
+      - BolVPN1_HK_🇭🇰_6
+      - BolVPN1_FR_🇫🇷_7
+      - BolVPN1_US_🇺🇸_9
+      - BolVPN1_FR_🇫🇷_12
+      - BolVPN1_US_🇺🇸_16
+      - BolVPN1_GB_🇬🇧_17
+      - BolVPN1_US_🇺🇸_19
+      - BolVPN1_US_🇺🇸_23
       - BolVPN1_DK_🇩🇰_27
       - BolVPN1_DE_🇩🇪_28
       - BolVPN1_DK_🇩🇰_29
       - BolVPN1_US_🇺🇸_30
       - BolVPN1_DE_🇩🇪_31
       - BolVPN1_NL_🇳🇱_32
-      - BolVPN1_US_🇺🇸_33
       - BolVPN1_GB_🇬🇧_34
       - BolVPN1___35
-      - BolVPN1_NL_🇳🇱_36
-      - BolVPN1_FR_🇫🇷_37
-      - BolVPN1_US_🇺🇸_38
       - BolVPN1_US_🇺🇸_39
       - BolVPN1_DE_🇩🇪_40
-      - BolVPN1_CA_🇨🇦_41
-      - BolVPN1_CA_🇨🇦_42
       - BolVPN1_US_🇺🇸_43
-      - BolVPN1_US_🇺🇸_44
-      - BolVPN1_CA_🇨🇦_45
       - BolVPN1_US_🇺🇸_46
-      - BolVPN1_CA_🇨🇦_47
-      - BolVPN1_US_🇺🇸_48
       - BolVPN1_RU_🇷🇺_49
       - BolVPN1_US_🇺🇸_50
       - BolVPN1_US_🇺🇸_51
       - BolVPN1_US_🇺🇸_52
       - BolVPN1_US_🇺🇸_53
-      - BolVPN1_MY_🇲🇾_54
       - BolVPN1_IR_🇮🇷_55
-      - BolVPN1_JP_🇯🇵_56
-      - BolVPN1_HK_🇭🇰_57
       - BolVPN1_US_🇺🇸_58
       - BolVPN1_IR_🇮🇷_59
       - BolVPN1_SG_🇸🇬_60
       - BolVPN1_JP_🇯🇵_61
       - BolVPN1_MX_🇲🇽_62
       - BolVPN1_MX_🇲🇽_63
-      - BolVPN1_FR_🇫🇷_64
-      - BolVPN1_FR_🇫🇷_65
-      - BolVPN1_FR_🇫🇷_66
-      - BolVPN1_US_🇺🇸_67
       - BolVPN1___68
       - BolVPN1_NL_🇳🇱_69
-      - BolVPN1_US_🇺🇸_70
       - BolVPN1_US_🇺🇸_71
-      - BolVPN1_FR_🇫🇷_72
       - BolVPN1___73
       - BolVPN1_US_🇺🇸_74
-      - BolVPN1_CA_🇨🇦_75
       - BolVPN1_US_🇺🇸_76
-      - BolVPN1_US_🇺🇸_77
       - BolVPN1_US_🇺🇸_78
-      - BolVPN1_US_🇺🇸_79
-      - BolVPN1_US_🇺🇸_80
-      - BolVPN1_FR_🇫🇷_81
       - BolVPN1_US_🇺🇸_82
-      - BolVPN1_GB_🇬🇧_83
       - BolVPN1_US_🇺🇸_84
-      - BolVPN1_US_🇺🇸_85
       - BolVPN1_US_🇺🇸_86
-      - BolVPN1_US_🇺🇸_87
-      - BolVPN1___88
-      - BolVPN1_CA_🇨🇦_89
-      - BolVPN1_US_🇺🇸_90
       - BolVPN1_US_🇺🇸_91
-      - BolVPN1_JP_🇯🇵_92
-      - BolVPN1_IR_🇮🇷_93
-      - BolVPN1_CA_🇨🇦_94
-      - BolVPN1_FR_🇫🇷_95
       - BolVPN1_US_🇺🇸_96
-      - BolVPN1_CA_🇨🇦_97
-      - BolVPN1_FR_🇫🇷_98
       - BolVPN1_US_🇺🇸_99
       - BolVPN1_MX_🇲🇽_100
+      - BolVPN1___8
+      - BolVPN1___10
+      - BolVPN1___11
+      - BolVPN1_NL_🇳🇱_14
+      - BolVPN1___18
+      - BolVPN1_US_🇺🇸_33
+      - BolVPN1_NL_🇳🇱_36
+      - BolVPN1_JP_🇯🇵_56
+      - BolVPN1_HK_🇭🇰_57
+      - BolVPN1_US_🇺🇸_67
+      - BolVPN1_US_🇺🇸_70
+      - BolVPN1___88
+      - BolVPN1_JP_🇯🇵_92
+      - BolVPN1_DE_🇩🇪_13
+      - BolVPN1_US_🇺🇸_38
+      - BolVPN1_US_🇺🇸_44
+      - BolVPN1_US_🇺🇸_48
+      - BolVPN1_US_🇺🇸_85
+      - BolVPN1_US_🇺🇸_90
+      - BolVpn2_TW_🇹🇼
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -1341,433 +1334,433 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - کانفیگ ها امن نیستند.
-      - با فیلترشکن آپدیت کنید.
-      - هر 2 لینک در طی روز آپدیت میشوند.
-      - BolVPN1_FR_🇫🇷_1
-      - BolVPN1_FR_🇫🇷_2
       - BolVPN1_FR_🇫🇷_3
-      - BolVPN1_GB_🇬🇧_4
-      - BolVPN1_GB_🇬🇧_5
-      - BolVPN1_HK_🇭🇰_6
-      - BolVPN1_FR_🇫🇷_7
-      - BolVPN1___8
-      - BolVPN1_US_🇺🇸_9
-      - BolVPN1___10
-      - BolVPN1___11
-      - BolVPN1_FR_🇫🇷_12
-      - BolVPN1_DE_🇩🇪_13
-      - BolVPN1_NL_🇳🇱_14
-      - BolVPN1_FR_🇫🇷_15
-      - BolVPN1_US_🇺🇸_16
-      - BolVPN1_GB_🇬🇧_17
-      - BolVPN1___18
-      - BolVPN1_US_🇺🇸_19
       - BolVPN1_PL_🇵🇱_20
       - BolVPN1_FR_🇫🇷_21
       - BolVPN1_US_🇺🇸_22
-      - BolVPN1_US_🇺🇸_23
       - BolVPN1___24
+      - BolVPN1_CA_🇨🇦_41
+      - BolVPN1_CA_🇨🇦_42
+      - BolVPN1_CA_🇨🇦_47
+      - BolVPN1_MY_🇲🇾_54
+      - BolVPN1_FR_🇫🇷_65
+      - BolVPN1_CA_🇨🇦_75
+      - BolVPN1_US_🇺🇸_77
+      - BolVPN1_US_🇺🇸_79
+      - BolVPN1_US_🇺🇸_80
+      - BolVPN1_US_🇺🇸_87
+      - BolVPN1_CA_🇨🇦_89
+      - BolVPN1_IR_🇮🇷_93
+      - BolVPN1_CA_🇨🇦_94
+      - BolVPN1_FR_🇫🇷_98
+      - BolVPN1_FR_🇫🇷_1
+      - BolVPN1_FR_🇫🇷_2
+      - BolVPN1_GB_🇬🇧_4
+      - BolVPN1_GB_🇬🇧_5
+      - BolVPN1_FR_🇫🇷_15
       - BolVPN1_RU_🇷🇺_25
       - BolVPN1_GB_🇬🇧_26
+      - BolVPN1_FR_🇫🇷_37
+      - BolVPN1_CA_🇨🇦_45
+      - BolVPN1_FR_🇫🇷_64
+      - BolVPN1_FR_🇫🇷_66
+      - BolVPN1_FR_🇫🇷_72
+      - BolVPN1_FR_🇫🇷_81
+      - BolVPN1_GB_🇬🇧_83
+      - BolVPN1_FR_🇫🇷_95
+      - کانفیگ ها امن نیستند.
+      - با فیلترشکن آپدیت کنید.
+      - هر 2 لینک در طی روز آپدیت میشوند.
+      - BolVPN1_HK_🇭🇰_6
+      - BolVPN1_FR_🇫🇷_7
+      - BolVPN1_US_🇺🇸_9
+      - BolVPN1_FR_🇫🇷_12
+      - BolVPN1_US_🇺🇸_16
+      - BolVPN1_GB_🇬🇧_17
+      - BolVPN1_US_🇺🇸_19
+      - BolVPN1_US_🇺🇸_23
       - BolVPN1_DK_🇩🇰_27
       - BolVPN1_DE_🇩🇪_28
       - BolVPN1_DK_🇩🇰_29
       - BolVPN1_US_🇺🇸_30
       - BolVPN1_DE_🇩🇪_31
       - BolVPN1_NL_🇳🇱_32
-      - BolVPN1_US_🇺🇸_33
       - BolVPN1_GB_🇬🇧_34
       - BolVPN1___35
-      - BolVPN1_NL_🇳🇱_36
-      - BolVPN1_FR_🇫🇷_37
-      - BolVPN1_US_🇺🇸_38
       - BolVPN1_US_🇺🇸_39
       - BolVPN1_DE_🇩🇪_40
-      - BolVPN1_CA_🇨🇦_41
-      - BolVPN1_CA_🇨🇦_42
       - BolVPN1_US_🇺🇸_43
-      - BolVPN1_US_🇺🇸_44
-      - BolVPN1_CA_🇨🇦_45
       - BolVPN1_US_🇺🇸_46
-      - BolVPN1_CA_🇨🇦_47
-      - BolVPN1_US_🇺🇸_48
       - BolVPN1_RU_🇷🇺_49
       - BolVPN1_US_🇺🇸_50
       - BolVPN1_US_🇺🇸_51
       - BolVPN1_US_🇺🇸_52
       - BolVPN1_US_🇺🇸_53
-      - BolVPN1_MY_🇲🇾_54
       - BolVPN1_IR_🇮🇷_55
-      - BolVPN1_JP_🇯🇵_56
-      - BolVPN1_HK_🇭🇰_57
       - BolVPN1_US_🇺🇸_58
       - BolVPN1_IR_🇮🇷_59
       - BolVPN1_SG_🇸🇬_60
       - BolVPN1_JP_🇯🇵_61
       - BolVPN1_MX_🇲🇽_62
       - BolVPN1_MX_🇲🇽_63
-      - BolVPN1_FR_🇫🇷_64
-      - BolVPN1_FR_🇫🇷_65
-      - BolVPN1_FR_🇫🇷_66
-      - BolVPN1_US_🇺🇸_67
       - BolVPN1___68
       - BolVPN1_NL_🇳🇱_69
-      - BolVPN1_US_🇺🇸_70
       - BolVPN1_US_🇺🇸_71
-      - BolVPN1_FR_🇫🇷_72
       - BolVPN1___73
       - BolVPN1_US_🇺🇸_74
-      - BolVPN1_CA_🇨🇦_75
       - BolVPN1_US_🇺🇸_76
-      - BolVPN1_US_🇺🇸_77
       - BolVPN1_US_🇺🇸_78
-      - BolVPN1_US_🇺🇸_79
-      - BolVPN1_US_🇺🇸_80
-      - BolVPN1_FR_🇫🇷_81
       - BolVPN1_US_🇺🇸_82
-      - BolVPN1_GB_🇬🇧_83
       - BolVPN1_US_🇺🇸_84
-      - BolVPN1_US_🇺🇸_85
       - BolVPN1_US_🇺🇸_86
-      - BolVPN1_US_🇺🇸_87
-      - BolVPN1___88
-      - BolVPN1_CA_🇨🇦_89
-      - BolVPN1_US_🇺🇸_90
       - BolVPN1_US_🇺🇸_91
-      - BolVPN1_JP_🇯🇵_92
-      - BolVPN1_IR_🇮🇷_93
-      - BolVPN1_CA_🇨🇦_94
-      - BolVPN1_FR_🇫🇷_95
       - BolVPN1_US_🇺🇸_96
-      - BolVPN1_CA_🇨🇦_97
-      - BolVPN1_FR_🇫🇷_98
       - BolVPN1_US_🇺🇸_99
       - BolVPN1_MX_🇲🇽_100
+      - BolVPN1___8
+      - BolVPN1___10
+      - BolVPN1___11
+      - BolVPN1_NL_🇳🇱_14
+      - BolVPN1___18
+      - BolVPN1_US_🇺🇸_33
+      - BolVPN1_NL_🇳🇱_36
+      - BolVPN1_JP_🇯🇵_56
+      - BolVPN1_HK_🇭🇰_57
+      - BolVPN1_US_🇺🇸_67
+      - BolVPN1_US_🇺🇸_70
+      - BolVPN1___88
+      - BolVPN1_JP_🇯🇵_92
+      - BolVPN1_DE_🇩🇪_13
+      - BolVPN1_US_🇺🇸_38
+      - BolVPN1_US_🇺🇸_44
+      - BolVPN1_US_🇺🇸_48
+      - BolVPN1_US_🇺🇸_85
+      - BolVPN1_US_🇺🇸_90
+      - BolVpn2_TW_🇹🇼
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - کانفیگ ها امن نیستند.
-      - با فیلترشکن آپدیت کنید.
-      - هر 2 لینک در طی روز آپدیت میشوند.
-      - BolVPN1_FR_🇫🇷_1
-      - BolVPN1_FR_🇫🇷_2
       - BolVPN1_FR_🇫🇷_3
-      - BolVPN1_GB_🇬🇧_4
-      - BolVPN1_GB_🇬🇧_5
-      - BolVPN1_HK_🇭🇰_6
-      - BolVPN1_FR_🇫🇷_7
-      - BolVPN1___8
-      - BolVPN1_US_🇺🇸_9
-      - BolVPN1___10
-      - BolVPN1___11
-      - BolVPN1_FR_🇫🇷_12
-      - BolVPN1_DE_🇩🇪_13
-      - BolVPN1_NL_🇳🇱_14
-      - BolVPN1_FR_🇫🇷_15
-      - BolVPN1_US_🇺🇸_16
-      - BolVPN1_GB_🇬🇧_17
-      - BolVPN1___18
-      - BolVPN1_US_🇺🇸_19
       - BolVPN1_PL_🇵🇱_20
       - BolVPN1_FR_🇫🇷_21
       - BolVPN1_US_🇺🇸_22
-      - BolVPN1_US_🇺🇸_23
       - BolVPN1___24
+      - BolVPN1_CA_🇨🇦_41
+      - BolVPN1_CA_🇨🇦_42
+      - BolVPN1_CA_🇨🇦_47
+      - BolVPN1_MY_🇲🇾_54
+      - BolVPN1_FR_🇫🇷_65
+      - BolVPN1_CA_🇨🇦_75
+      - BolVPN1_US_🇺🇸_77
+      - BolVPN1_US_🇺🇸_79
+      - BolVPN1_US_🇺🇸_80
+      - BolVPN1_US_🇺🇸_87
+      - BolVPN1_CA_🇨🇦_89
+      - BolVPN1_IR_🇮🇷_93
+      - BolVPN1_CA_🇨🇦_94
+      - BolVPN1_FR_🇫🇷_98
+      - BolVPN1_FR_🇫🇷_1
+      - BolVPN1_FR_🇫🇷_2
+      - BolVPN1_GB_🇬🇧_4
+      - BolVPN1_GB_🇬🇧_5
+      - BolVPN1_FR_🇫🇷_15
       - BolVPN1_RU_🇷🇺_25
       - BolVPN1_GB_🇬🇧_26
+      - BolVPN1_FR_🇫🇷_37
+      - BolVPN1_CA_🇨🇦_45
+      - BolVPN1_FR_🇫🇷_64
+      - BolVPN1_FR_🇫🇷_66
+      - BolVPN1_FR_🇫🇷_72
+      - BolVPN1_FR_🇫🇷_81
+      - BolVPN1_GB_🇬🇧_83
+      - BolVPN1_FR_🇫🇷_95
+      - کانفیگ ها امن نیستند.
+      - با فیلترشکن آپدیت کنید.
+      - هر 2 لینک در طی روز آپدیت میشوند.
+      - BolVPN1_HK_🇭🇰_6
+      - BolVPN1_FR_🇫🇷_7
+      - BolVPN1_US_🇺🇸_9
+      - BolVPN1_FR_🇫🇷_12
+      - BolVPN1_US_🇺🇸_16
+      - BolVPN1_GB_🇬🇧_17
+      - BolVPN1_US_🇺🇸_19
+      - BolVPN1_US_🇺🇸_23
       - BolVPN1_DK_🇩🇰_27
       - BolVPN1_DE_🇩🇪_28
       - BolVPN1_DK_🇩🇰_29
       - BolVPN1_US_🇺🇸_30
       - BolVPN1_DE_🇩🇪_31
       - BolVPN1_NL_🇳🇱_32
-      - BolVPN1_US_🇺🇸_33
       - BolVPN1_GB_🇬🇧_34
       - BolVPN1___35
-      - BolVPN1_NL_🇳🇱_36
-      - BolVPN1_FR_🇫🇷_37
-      - BolVPN1_US_🇺🇸_38
       - BolVPN1_US_🇺🇸_39
       - BolVPN1_DE_🇩🇪_40
-      - BolVPN1_CA_🇨🇦_41
-      - BolVPN1_CA_🇨🇦_42
       - BolVPN1_US_🇺🇸_43
-      - BolVPN1_US_🇺🇸_44
-      - BolVPN1_CA_🇨🇦_45
       - BolVPN1_US_🇺🇸_46
-      - BolVPN1_CA_🇨🇦_47
-      - BolVPN1_US_🇺🇸_48
       - BolVPN1_RU_🇷🇺_49
       - BolVPN1_US_🇺🇸_50
       - BolVPN1_US_🇺🇸_51
       - BolVPN1_US_🇺🇸_52
       - BolVPN1_US_🇺🇸_53
-      - BolVPN1_MY_🇲🇾_54
       - BolVPN1_IR_🇮🇷_55
-      - BolVPN1_JP_🇯🇵_56
-      - BolVPN1_HK_🇭🇰_57
       - BolVPN1_US_🇺🇸_58
       - BolVPN1_IR_🇮🇷_59
       - BolVPN1_SG_🇸🇬_60
       - BolVPN1_JP_🇯🇵_61
       - BolVPN1_MX_🇲🇽_62
       - BolVPN1_MX_🇲🇽_63
-      - BolVPN1_FR_🇫🇷_64
-      - BolVPN1_FR_🇫🇷_65
-      - BolVPN1_FR_🇫🇷_66
-      - BolVPN1_US_🇺🇸_67
       - BolVPN1___68
       - BolVPN1_NL_🇳🇱_69
-      - BolVPN1_US_🇺🇸_70
       - BolVPN1_US_🇺🇸_71
-      - BolVPN1_FR_🇫🇷_72
       - BolVPN1___73
       - BolVPN1_US_🇺🇸_74
-      - BolVPN1_CA_🇨🇦_75
       - BolVPN1_US_🇺🇸_76
-      - BolVPN1_US_🇺🇸_77
       - BolVPN1_US_🇺🇸_78
-      - BolVPN1_US_🇺🇸_79
-      - BolVPN1_US_🇺🇸_80
-      - BolVPN1_FR_🇫🇷_81
       - BolVPN1_US_🇺🇸_82
-      - BolVPN1_GB_🇬🇧_83
       - BolVPN1_US_🇺🇸_84
-      - BolVPN1_US_🇺🇸_85
       - BolVPN1_US_🇺🇸_86
-      - BolVPN1_US_🇺🇸_87
-      - BolVPN1___88
-      - BolVPN1_CA_🇨🇦_89
-      - BolVPN1_US_🇺🇸_90
       - BolVPN1_US_🇺🇸_91
-      - BolVPN1_JP_🇯🇵_92
-      - BolVPN1_IR_🇮🇷_93
-      - BolVPN1_CA_🇨🇦_94
-      - BolVPN1_FR_🇫🇷_95
       - BolVPN1_US_🇺🇸_96
-      - BolVPN1_CA_🇨🇦_97
-      - BolVPN1_FR_🇫🇷_98
       - BolVPN1_US_🇺🇸_99
       - BolVPN1_MX_🇲🇽_100
+      - BolVPN1___8
+      - BolVPN1___10
+      - BolVPN1___11
+      - BolVPN1_NL_🇳🇱_14
+      - BolVPN1___18
+      - BolVPN1_US_🇺🇸_33
+      - BolVPN1_NL_🇳🇱_36
+      - BolVPN1_JP_🇯🇵_56
+      - BolVPN1_HK_🇭🇰_57
+      - BolVPN1_US_🇺🇸_67
+      - BolVPN1_US_🇺🇸_70
+      - BolVPN1___88
+      - BolVPN1_JP_🇯🇵_92
+      - BolVPN1_DE_🇩🇪_13
+      - BolVPN1_US_🇺🇸_38
+      - BolVPN1_US_🇺🇸_44
+      - BolVPN1_US_🇺🇸_48
+      - BolVPN1_US_🇺🇸_85
+      - BolVPN1_US_🇺🇸_90
+      - BolVpn2_TW_🇹🇼
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - کانفیگ ها امن نیستند.
-      - با فیلترشکن آپدیت کنید.
-      - هر 2 لینک در طی روز آپدیت میشوند.
-      - BolVPN1_FR_🇫🇷_1
-      - BolVPN1_FR_🇫🇷_2
       - BolVPN1_FR_🇫🇷_3
-      - BolVPN1_GB_🇬🇧_4
-      - BolVPN1_GB_🇬🇧_5
-      - BolVPN1_HK_🇭🇰_6
-      - BolVPN1_FR_🇫🇷_7
-      - BolVPN1___8
-      - BolVPN1_US_🇺🇸_9
-      - BolVPN1___10
-      - BolVPN1___11
-      - BolVPN1_FR_🇫🇷_12
-      - BolVPN1_DE_🇩🇪_13
-      - BolVPN1_NL_🇳🇱_14
-      - BolVPN1_FR_🇫🇷_15
-      - BolVPN1_US_🇺🇸_16
-      - BolVPN1_GB_🇬🇧_17
-      - BolVPN1___18
-      - BolVPN1_US_🇺🇸_19
       - BolVPN1_PL_🇵🇱_20
       - BolVPN1_FR_🇫🇷_21
       - BolVPN1_US_🇺🇸_22
-      - BolVPN1_US_🇺🇸_23
       - BolVPN1___24
+      - BolVPN1_CA_🇨🇦_41
+      - BolVPN1_CA_🇨🇦_42
+      - BolVPN1_CA_🇨🇦_47
+      - BolVPN1_MY_🇲🇾_54
+      - BolVPN1_FR_🇫🇷_65
+      - BolVPN1_CA_🇨🇦_75
+      - BolVPN1_US_🇺🇸_77
+      - BolVPN1_US_🇺🇸_79
+      - BolVPN1_US_🇺🇸_80
+      - BolVPN1_US_🇺🇸_87
+      - BolVPN1_CA_🇨🇦_89
+      - BolVPN1_IR_🇮🇷_93
+      - BolVPN1_CA_🇨🇦_94
+      - BolVPN1_FR_🇫🇷_98
+      - BolVPN1_FR_🇫🇷_1
+      - BolVPN1_FR_🇫🇷_2
+      - BolVPN1_GB_🇬🇧_4
+      - BolVPN1_GB_🇬🇧_5
+      - BolVPN1_FR_🇫🇷_15
       - BolVPN1_RU_🇷🇺_25
       - BolVPN1_GB_🇬🇧_26
+      - BolVPN1_FR_🇫🇷_37
+      - BolVPN1_CA_🇨🇦_45
+      - BolVPN1_FR_🇫🇷_64
+      - BolVPN1_FR_🇫🇷_66
+      - BolVPN1_FR_🇫🇷_72
+      - BolVPN1_FR_🇫🇷_81
+      - BolVPN1_GB_🇬🇧_83
+      - BolVPN1_FR_🇫🇷_95
+      - کانفیگ ها امن نیستند.
+      - با فیلترشکن آپدیت کنید.
+      - هر 2 لینک در طی روز آپدیت میشوند.
+      - BolVPN1_HK_🇭🇰_6
+      - BolVPN1_FR_🇫🇷_7
+      - BolVPN1_US_🇺🇸_9
+      - BolVPN1_FR_🇫🇷_12
+      - BolVPN1_US_🇺🇸_16
+      - BolVPN1_GB_🇬🇧_17
+      - BolVPN1_US_🇺🇸_19
+      - BolVPN1_US_🇺🇸_23
       - BolVPN1_DK_🇩🇰_27
       - BolVPN1_DE_🇩🇪_28
       - BolVPN1_DK_🇩🇰_29
       - BolVPN1_US_🇺🇸_30
       - BolVPN1_DE_🇩🇪_31
       - BolVPN1_NL_🇳🇱_32
-      - BolVPN1_US_🇺🇸_33
       - BolVPN1_GB_🇬🇧_34
       - BolVPN1___35
-      - BolVPN1_NL_🇳🇱_36
-      - BolVPN1_FR_🇫🇷_37
-      - BolVPN1_US_🇺🇸_38
       - BolVPN1_US_🇺🇸_39
       - BolVPN1_DE_🇩🇪_40
-      - BolVPN1_CA_🇨🇦_41
-      - BolVPN1_CA_🇨🇦_42
       - BolVPN1_US_🇺🇸_43
-      - BolVPN1_US_🇺🇸_44
-      - BolVPN1_CA_🇨🇦_45
       - BolVPN1_US_🇺🇸_46
-      - BolVPN1_CA_🇨🇦_47
-      - BolVPN1_US_🇺🇸_48
       - BolVPN1_RU_🇷🇺_49
       - BolVPN1_US_🇺🇸_50
       - BolVPN1_US_🇺🇸_51
       - BolVPN1_US_🇺🇸_52
       - BolVPN1_US_🇺🇸_53
-      - BolVPN1_MY_🇲🇾_54
       - BolVPN1_IR_🇮🇷_55
-      - BolVPN1_JP_🇯🇵_56
-      - BolVPN1_HK_🇭🇰_57
       - BolVPN1_US_🇺🇸_58
       - BolVPN1_IR_🇮🇷_59
       - BolVPN1_SG_🇸🇬_60
       - BolVPN1_JP_🇯🇵_61
       - BolVPN1_MX_🇲🇽_62
       - BolVPN1_MX_🇲🇽_63
-      - BolVPN1_FR_🇫🇷_64
-      - BolVPN1_FR_🇫🇷_65
-      - BolVPN1_FR_🇫🇷_66
-      - BolVPN1_US_🇺🇸_67
       - BolVPN1___68
       - BolVPN1_NL_🇳🇱_69
-      - BolVPN1_US_🇺🇸_70
       - BolVPN1_US_🇺🇸_71
-      - BolVPN1_FR_🇫🇷_72
       - BolVPN1___73
       - BolVPN1_US_🇺🇸_74
-      - BolVPN1_CA_🇨🇦_75
       - BolVPN1_US_🇺🇸_76
-      - BolVPN1_US_🇺🇸_77
       - BolVPN1_US_🇺🇸_78
-      - BolVPN1_US_🇺🇸_79
-      - BolVPN1_US_🇺🇸_80
-      - BolVPN1_FR_🇫🇷_81
       - BolVPN1_US_🇺🇸_82
-      - BolVPN1_GB_🇬🇧_83
       - BolVPN1_US_🇺🇸_84
-      - BolVPN1_US_🇺🇸_85
       - BolVPN1_US_🇺🇸_86
-      - BolVPN1_US_🇺🇸_87
-      - BolVPN1___88
-      - BolVPN1_CA_🇨🇦_89
-      - BolVPN1_US_🇺🇸_90
       - BolVPN1_US_🇺🇸_91
-      - BolVPN1_JP_🇯🇵_92
-      - BolVPN1_IR_🇮🇷_93
-      - BolVPN1_CA_🇨🇦_94
-      - BolVPN1_FR_🇫🇷_95
       - BolVPN1_US_🇺🇸_96
-      - BolVPN1_CA_🇨🇦_97
-      - BolVPN1_FR_🇫🇷_98
       - BolVPN1_US_🇺🇸_99
       - BolVPN1_MX_🇲🇽_100
+      - BolVPN1___8
+      - BolVPN1___10
+      - BolVPN1___11
+      - BolVPN1_NL_🇳🇱_14
+      - BolVPN1___18
+      - BolVPN1_US_🇺🇸_33
+      - BolVPN1_NL_🇳🇱_36
+      - BolVPN1_JP_🇯🇵_56
+      - BolVPN1_HK_🇭🇰_57
+      - BolVPN1_US_🇺🇸_67
+      - BolVPN1_US_🇺🇸_70
+      - BolVPN1___88
+      - BolVPN1_JP_🇯🇵_92
+      - BolVPN1_DE_🇩🇪_13
+      - BolVPN1_US_🇺🇸_38
+      - BolVPN1_US_🇺🇸_44
+      - BolVPN1_US_🇺🇸_48
+      - BolVPN1_US_🇺🇸_85
+      - BolVPN1_US_🇺🇸_90
+      - BolVpn2_TW_🇹🇼
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - کانفیگ ها امن نیستند.
-      - با فیلترشکن آپدیت کنید.
-      - هر 2 لینک در طی روز آپدیت میشوند.
-      - BolVPN1_FR_🇫🇷_1
-      - BolVPN1_FR_🇫🇷_2
       - BolVPN1_FR_🇫🇷_3
-      - BolVPN1_GB_🇬🇧_4
-      - BolVPN1_GB_🇬🇧_5
-      - BolVPN1_HK_🇭🇰_6
-      - BolVPN1_FR_🇫🇷_7
-      - BolVPN1___8
-      - BolVPN1_US_🇺🇸_9
-      - BolVPN1___10
-      - BolVPN1___11
-      - BolVPN1_FR_🇫🇷_12
-      - BolVPN1_DE_🇩🇪_13
-      - BolVPN1_NL_🇳🇱_14
-      - BolVPN1_FR_🇫🇷_15
-      - BolVPN1_US_🇺🇸_16
-      - BolVPN1_GB_🇬🇧_17
-      - BolVPN1___18
-      - BolVPN1_US_🇺🇸_19
       - BolVPN1_PL_🇵🇱_20
       - BolVPN1_FR_🇫🇷_21
       - BolVPN1_US_🇺🇸_22
-      - BolVPN1_US_🇺🇸_23
       - BolVPN1___24
+      - BolVPN1_CA_🇨🇦_41
+      - BolVPN1_CA_🇨🇦_42
+      - BolVPN1_CA_🇨🇦_47
+      - BolVPN1_MY_🇲🇾_54
+      - BolVPN1_FR_🇫🇷_65
+      - BolVPN1_CA_🇨🇦_75
+      - BolVPN1_US_🇺🇸_77
+      - BolVPN1_US_🇺🇸_79
+      - BolVPN1_US_🇺🇸_80
+      - BolVPN1_US_🇺🇸_87
+      - BolVPN1_CA_🇨🇦_89
+      - BolVPN1_IR_🇮🇷_93
+      - BolVPN1_CA_🇨🇦_94
+      - BolVPN1_FR_🇫🇷_98
+      - BolVPN1_FR_🇫🇷_1
+      - BolVPN1_FR_🇫🇷_2
+      - BolVPN1_GB_🇬🇧_4
+      - BolVPN1_GB_🇬🇧_5
+      - BolVPN1_FR_🇫🇷_15
       - BolVPN1_RU_🇷🇺_25
       - BolVPN1_GB_🇬🇧_26
+      - BolVPN1_FR_🇫🇷_37
+      - BolVPN1_CA_🇨🇦_45
+      - BolVPN1_FR_🇫🇷_64
+      - BolVPN1_FR_🇫🇷_66
+      - BolVPN1_FR_🇫🇷_72
+      - BolVPN1_FR_🇫🇷_81
+      - BolVPN1_GB_🇬🇧_83
+      - BolVPN1_FR_🇫🇷_95
+      - کانفیگ ها امن نیستند.
+      - با فیلترشکن آپدیت کنید.
+      - هر 2 لینک در طی روز آپدیت میشوند.
+      - BolVPN1_HK_🇭🇰_6
+      - BolVPN1_FR_🇫🇷_7
+      - BolVPN1_US_🇺🇸_9
+      - BolVPN1_FR_🇫🇷_12
+      - BolVPN1_US_🇺🇸_16
+      - BolVPN1_GB_🇬🇧_17
+      - BolVPN1_US_🇺🇸_19
+      - BolVPN1_US_🇺🇸_23
       - BolVPN1_DK_🇩🇰_27
       - BolVPN1_DE_🇩🇪_28
       - BolVPN1_DK_🇩🇰_29
       - BolVPN1_US_🇺🇸_30
       - BolVPN1_DE_🇩🇪_31
       - BolVPN1_NL_🇳🇱_32
-      - BolVPN1_US_🇺🇸_33
       - BolVPN1_GB_🇬🇧_34
       - BolVPN1___35
-      - BolVPN1_NL_🇳🇱_36
-      - BolVPN1_FR_🇫🇷_37
-      - BolVPN1_US_🇺🇸_38
       - BolVPN1_US_🇺🇸_39
       - BolVPN1_DE_🇩🇪_40
-      - BolVPN1_CA_🇨🇦_41
-      - BolVPN1_CA_🇨🇦_42
       - BolVPN1_US_🇺🇸_43
-      - BolVPN1_US_🇺🇸_44
-      - BolVPN1_CA_🇨🇦_45
       - BolVPN1_US_🇺🇸_46
-      - BolVPN1_CA_🇨🇦_47
-      - BolVPN1_US_🇺🇸_48
       - BolVPN1_RU_🇷🇺_49
       - BolVPN1_US_🇺🇸_50
       - BolVPN1_US_🇺🇸_51
       - BolVPN1_US_🇺🇸_52
       - BolVPN1_US_🇺🇸_53
-      - BolVPN1_MY_🇲🇾_54
       - BolVPN1_IR_🇮🇷_55
-      - BolVPN1_JP_🇯🇵_56
-      - BolVPN1_HK_🇭🇰_57
       - BolVPN1_US_🇺🇸_58
       - BolVPN1_IR_🇮🇷_59
       - BolVPN1_SG_🇸🇬_60
       - BolVPN1_JP_🇯🇵_61
       - BolVPN1_MX_🇲🇽_62
       - BolVPN1_MX_🇲🇽_63
-      - BolVPN1_FR_🇫🇷_64
-      - BolVPN1_FR_🇫🇷_65
-      - BolVPN1_FR_🇫🇷_66
-      - BolVPN1_US_🇺🇸_67
       - BolVPN1___68
       - BolVPN1_NL_🇳🇱_69
-      - BolVPN1_US_🇺🇸_70
       - BolVPN1_US_🇺🇸_71
-      - BolVPN1_FR_🇫🇷_72
       - BolVPN1___73
       - BolVPN1_US_🇺🇸_74
-      - BolVPN1_CA_🇨🇦_75
       - BolVPN1_US_🇺🇸_76
-      - BolVPN1_US_🇺🇸_77
       - BolVPN1_US_🇺🇸_78
-      - BolVPN1_US_🇺🇸_79
-      - BolVPN1_US_🇺🇸_80
-      - BolVPN1_FR_🇫🇷_81
       - BolVPN1_US_🇺🇸_82
-      - BolVPN1_GB_🇬🇧_83
       - BolVPN1_US_🇺🇸_84
-      - BolVPN1_US_🇺🇸_85
       - BolVPN1_US_🇺🇸_86
-      - BolVPN1_US_🇺🇸_87
-      - BolVPN1___88
-      - BolVPN1_CA_🇨🇦_89
-      - BolVPN1_US_🇺🇸_90
       - BolVPN1_US_🇺🇸_91
-      - BolVPN1_JP_🇯🇵_92
-      - BolVPN1_IR_🇮🇷_93
-      - BolVPN1_CA_🇨🇦_94
-      - BolVPN1_FR_🇫🇷_95
       - BolVPN1_US_🇺🇸_96
-      - BolVPN1_CA_🇨🇦_97
-      - BolVPN1_FR_🇫🇷_98
       - BolVPN1_US_🇺🇸_99
       - BolVPN1_MX_🇲🇽_100
+      - BolVPN1___8
+      - BolVPN1___10
+      - BolVPN1___11
+      - BolVPN1_NL_🇳🇱_14
+      - BolVPN1___18
+      - BolVPN1_US_🇺🇸_33
+      - BolVPN1_NL_🇳🇱_36
+      - BolVPN1_JP_🇯🇵_56
+      - BolVPN1_HK_🇭🇰_57
+      - BolVPN1_US_🇺🇸_67
+      - BolVPN1_US_🇺🇸_70
+      - BolVPN1___88
+      - BolVPN1_JP_🇯🇵_92
+      - BolVPN1_DE_🇩🇪_13
+      - BolVPN1_US_🇺🇸_38
+      - BolVPN1_US_🇺🇸_44
+      - BolVPN1_US_🇺🇸_48
+      - BolVPN1_US_🇺🇸_85
+      - BolVPN1_US_🇺🇸_90
+      - BolVpn2_TW_🇹🇼
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1790,109 +1783,109 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - کانفیگ ها امن نیستند.
-      - با فیلترشکن آپدیت کنید.
-      - هر 2 لینک در طی روز آپدیت میشوند.
-      - BolVPN1_FR_🇫🇷_1
-      - BolVPN1_FR_🇫🇷_2
       - BolVPN1_FR_🇫🇷_3
-      - BolVPN1_GB_🇬🇧_4
-      - BolVPN1_GB_🇬🇧_5
-      - BolVPN1_HK_🇭🇰_6
-      - BolVPN1_FR_🇫🇷_7
-      - BolVPN1___8
-      - BolVPN1_US_🇺🇸_9
-      - BolVPN1___10
-      - BolVPN1___11
-      - BolVPN1_FR_🇫🇷_12
-      - BolVPN1_DE_🇩🇪_13
-      - BolVPN1_NL_🇳🇱_14
-      - BolVPN1_FR_🇫🇷_15
-      - BolVPN1_US_🇺🇸_16
-      - BolVPN1_GB_🇬🇧_17
-      - BolVPN1___18
-      - BolVPN1_US_🇺🇸_19
       - BolVPN1_PL_🇵🇱_20
       - BolVPN1_FR_🇫🇷_21
       - BolVPN1_US_🇺🇸_22
-      - BolVPN1_US_🇺🇸_23
       - BolVPN1___24
+      - BolVPN1_CA_🇨🇦_41
+      - BolVPN1_CA_🇨🇦_42
+      - BolVPN1_CA_🇨🇦_47
+      - BolVPN1_MY_🇲🇾_54
+      - BolVPN1_FR_🇫🇷_65
+      - BolVPN1_CA_🇨🇦_75
+      - BolVPN1_US_🇺🇸_77
+      - BolVPN1_US_🇺🇸_79
+      - BolVPN1_US_🇺🇸_80
+      - BolVPN1_US_🇺🇸_87
+      - BolVPN1_CA_🇨🇦_89
+      - BolVPN1_IR_🇮🇷_93
+      - BolVPN1_CA_🇨🇦_94
+      - BolVPN1_FR_🇫🇷_98
+      - BolVPN1_FR_🇫🇷_1
+      - BolVPN1_FR_🇫🇷_2
+      - BolVPN1_GB_🇬🇧_4
+      - BolVPN1_GB_🇬🇧_5
+      - BolVPN1_FR_🇫🇷_15
       - BolVPN1_RU_🇷🇺_25
       - BolVPN1_GB_🇬🇧_26
+      - BolVPN1_FR_🇫🇷_37
+      - BolVPN1_CA_🇨🇦_45
+      - BolVPN1_FR_🇫🇷_64
+      - BolVPN1_FR_🇫🇷_66
+      - BolVPN1_FR_🇫🇷_72
+      - BolVPN1_FR_🇫🇷_81
+      - BolVPN1_GB_🇬🇧_83
+      - BolVPN1_FR_🇫🇷_95
+      - کانفیگ ها امن نیستند.
+      - با فیلترشکن آپدیت کنید.
+      - هر 2 لینک در طی روز آپدیت میشوند.
+      - BolVPN1_HK_🇭🇰_6
+      - BolVPN1_FR_🇫🇷_7
+      - BolVPN1_US_🇺🇸_9
+      - BolVPN1_FR_🇫🇷_12
+      - BolVPN1_US_🇺🇸_16
+      - BolVPN1_GB_🇬🇧_17
+      - BolVPN1_US_🇺🇸_19
+      - BolVPN1_US_🇺🇸_23
       - BolVPN1_DK_🇩🇰_27
       - BolVPN1_DE_🇩🇪_28
       - BolVPN1_DK_🇩🇰_29
       - BolVPN1_US_🇺🇸_30
       - BolVPN1_DE_🇩🇪_31
       - BolVPN1_NL_🇳🇱_32
-      - BolVPN1_US_🇺🇸_33
       - BolVPN1_GB_🇬🇧_34
       - BolVPN1___35
-      - BolVPN1_NL_🇳🇱_36
-      - BolVPN1_FR_🇫🇷_37
-      - BolVPN1_US_🇺🇸_38
       - BolVPN1_US_🇺🇸_39
       - BolVPN1_DE_🇩🇪_40
-      - BolVPN1_CA_🇨🇦_41
-      - BolVPN1_CA_🇨🇦_42
       - BolVPN1_US_🇺🇸_43
-      - BolVPN1_US_🇺🇸_44
-      - BolVPN1_CA_🇨🇦_45
       - BolVPN1_US_🇺🇸_46
-      - BolVPN1_CA_🇨🇦_47
-      - BolVPN1_US_🇺🇸_48
       - BolVPN1_RU_🇷🇺_49
       - BolVPN1_US_🇺🇸_50
       - BolVPN1_US_🇺🇸_51
       - BolVPN1_US_🇺🇸_52
       - BolVPN1_US_🇺🇸_53
-      - BolVPN1_MY_🇲🇾_54
       - BolVPN1_IR_🇮🇷_55
-      - BolVPN1_JP_🇯🇵_56
-      - BolVPN1_HK_🇭🇰_57
       - BolVPN1_US_🇺🇸_58
       - BolVPN1_IR_🇮🇷_59
       - BolVPN1_SG_🇸🇬_60
       - BolVPN1_JP_🇯🇵_61
       - BolVPN1_MX_🇲🇽_62
       - BolVPN1_MX_🇲🇽_63
-      - BolVPN1_FR_🇫🇷_64
-      - BolVPN1_FR_🇫🇷_65
-      - BolVPN1_FR_🇫🇷_66
-      - BolVPN1_US_🇺🇸_67
       - BolVPN1___68
       - BolVPN1_NL_🇳🇱_69
-      - BolVPN1_US_🇺🇸_70
       - BolVPN1_US_🇺🇸_71
-      - BolVPN1_FR_🇫🇷_72
       - BolVPN1___73
       - BolVPN1_US_🇺🇸_74
-      - BolVPN1_CA_🇨🇦_75
       - BolVPN1_US_🇺🇸_76
-      - BolVPN1_US_🇺🇸_77
       - BolVPN1_US_🇺🇸_78
-      - BolVPN1_US_🇺🇸_79
-      - BolVPN1_US_🇺🇸_80
-      - BolVPN1_FR_🇫🇷_81
       - BolVPN1_US_🇺🇸_82
-      - BolVPN1_GB_🇬🇧_83
       - BolVPN1_US_🇺🇸_84
-      - BolVPN1_US_🇺🇸_85
       - BolVPN1_US_🇺🇸_86
-      - BolVPN1_US_🇺🇸_87
-      - BolVPN1___88
-      - BolVPN1_CA_🇨🇦_89
-      - BolVPN1_US_🇺🇸_90
       - BolVPN1_US_🇺🇸_91
-      - BolVPN1_JP_🇯🇵_92
-      - BolVPN1_IR_🇮🇷_93
-      - BolVPN1_CA_🇨🇦_94
-      - BolVPN1_FR_🇫🇷_95
       - BolVPN1_US_🇺🇸_96
-      - BolVPN1_CA_🇨🇦_97
-      - BolVPN1_FR_🇫🇷_98
       - BolVPN1_US_🇺🇸_99
       - BolVPN1_MX_🇲🇽_100
+      - BolVPN1___8
+      - BolVPN1___10
+      - BolVPN1___11
+      - BolVPN1_NL_🇳🇱_14
+      - BolVPN1___18
+      - BolVPN1_US_🇺🇸_33
+      - BolVPN1_NL_🇳🇱_36
+      - BolVPN1_JP_🇯🇵_56
+      - BolVPN1_HK_🇭🇰_57
+      - BolVPN1_US_🇺🇸_67
+      - BolVPN1_US_🇺🇸_70
+      - BolVPN1___88
+      - BolVPN1_JP_🇯🇵_92
+      - BolVPN1_DE_🇩🇪_13
+      - BolVPN1_US_🇺🇸_38
+      - BolVPN1_US_🇺🇸_44
+      - BolVPN1_US_🇺🇸_48
+      - BolVPN1_US_🇺🇸_85
+      - BolVPN1_US_🇺🇸_90
+      - BolVpn2_TW_🇹🇼
 rule-providers:
   LocalAreaNetwork:
     type: http
