@@ -2,7 +2,8 @@ vless://00000000-0000-0000-0000-000000000000@127.0.0.1:443?encryption=none&secur
 vless://00000000-0000-0000-0000-000000000000@127.0.0.1:444?encryption=none&security=none&type=ws&path=%2F#%D9%87%D8%B1%202%20%D9%84%DB%8C%D9%86%DA%A9%20%D8%AF%D8%B1%20%D8%B7%DB%8C%20%D8%B1%D9%88%D8%B2%20%D8%A2%D9%BE%D8%AF%DB%8C%D8%AA%20%D9%85%DB%8C%D8%B4%D9%88%D9%86%D8%AF.
 vless://00000000-0000-0000-0000-000000000000@0.0.0.1:443?encryption=none&security=none&type=ws&path=%2F#%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF%20%D9%87%D8%A7%20%D8%A7%D9%85%D9%86%20%D9%86%DB%8C%D8%B3%D8%AA%D9%86%D8%AF.
 
-
+vless://25f86cb1-2140-4085-abcb-c3a0ea7a4be0@ov-france1.09vpn.com:80?encryption=none&security=none&type=ws&path=%2Fvless%2F#%F0%9F%87%AB%F0%9F%87%B7%5Bwww.v2nodes.com%5D%20vless-FR-12723523
+T
 vless://4ed0f31f-a400-4012-be63-b7104ce1bb1e@gody.xrayshop.store:54230?encryption=none&security=none&type=tcp&headerType=http&host=tamin.ir#%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1NTY4ZTRkOTQ2YjYyMjQ1@135.125.245.131:19700?#%5BOpenRay%5D%20%F0%9F%87%A9%F0%9F%87%AA%20DE-6020
 vless://83dd438b-357b-4060-a633-52e9714afabe@37.139.32.212:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=max.ru&fp=chrome&pbk=FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg&sid=4a3ad88ff867a295&type=tcp&headerType=none#%F0%9F%87%B7%F0%9F%87%BA%20CIDR%20972
@@ -198,6 +199,7 @@ vless://96d9bcb0-9ad2-48be-85a2-a9ab3a005261@8.6.112.0:2083?encryption=none&secu
 vless://929c6e27-4c24-4775-bc51-0e6117dabd4b@my.montago-shop.ir:443?encryption=none&security=tls&sni=mx.mahoshid.ir&fp=chrome&alpn=h2&insecure=0&allowInsecure=0&type=ws&host=mx.mahoshid.ir&path=%2F%3Fed%3D2560#%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3
 vless://65fe56c2-78ec-417a-a666-9f393eac8b61@104.20.1.252:80?encryption=none&security=none&type=ws&host=everlASTinG-oFfERC4S5Mg1918.SpoRTLand.COMpaNy.&path=%2F%3Fed#%F0%9F%87%A9%F0%9F%87%AA%5Bopenproxylist.com%5D
 vless://c9b0932d-8d1c-43c5-b64b-e9a74719c76d@104.18.32.47:443?encryption=none&security=tls&sni=freuddd.info&fp=chrome&insecure=1&allowInsecure=1&type=ws&host=freuddd.info&path=%2Fhsdgsws#%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3
+
 
 
 
