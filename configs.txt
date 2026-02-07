@@ -4,6 +4,9 @@ vless://00000000-0000-0000-0000-000000000000@127.0.0.1:444?encryption=none&secur
 
 
 
+
+vless://34b3a7bc-ef17-aceb-9145-7a00bd2873b3@wsmux.jingo.wallett.4b3app.com:9090?encryption=none&security=none&type=ws&host=soft98.ir&path=%2Fws%3Fed%3D80#Telegram%3A%40config_proxy
+
 hysteria2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@5.175.249.174:35000?sni=api.kermanshahi.org&insecure=0&allowInsecure=0&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi#%40Hddify%20%7C%E2%9A%A0%EF%B8%8F%7C%20%DA%86%D9%86%D9%84%20%D9%87%D8%AF%DB%8C%D9%81%D8%A7%DB%8C
 trojan://telegram-id-directvpn@63.180.39.147:22223?security=tls&sni=trojan.burgerip.co.uk&alpn=http%2F1.1&insecure=1&allowInsecure=1&type=tcp&headerType=none#v2go%20%7C%20%F0%9F%87%A9%F0%9F%87%AA%20DE%20%7C%20TROJAN%20%7C%20906%20%7C%20%E2%9A%A1%20131ms
 vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@63.180.39.147:22224?encryption=none&security=tls&sni=trojan.burgerip.co.uk&insecure=1&allowInsecure=1&type=ws&path=%2Ftelegram-channel-vlessconfig#%40VlessConfig%20%F0%9F%87%A9%F0%9F%87%AA
@@ -126,6 +129,7 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlRlbGVncmFtOkBjb25maWdfcHJveHkgXHVEODNE
 vless://f8ae018b-b84d-4c9b-b03b-4642c3a25977@nodejs.org:2052?encryption=none&security=none&type=ws&host=ExEMplAry-MILkytsxQiQYso.sPortlaNd.CoMPANy.&path=%2F%3Fed#Telegram%3A%40config_proxy
 vless://068b4a85-2e76-4d49-9625-d3373396fe08@m1.fastspeeds.ir:2083?encryption=none&security=tls&sni=Shifo.digishopcenter.ir&insecure=1&allowInsecure=1&type=grpc&authority=Shifo.digishopcenter.ir&serviceName=Love&mode=multi#Telegram%3A%40config_proxy
 vless://0569f3ce-447b-4ac5-aae3-b47ae55351f7@167.82.92.159:80?encryption=none&security=none&type=ws&host=dayous.global.ssl.fastly.net&path=%2F#ARGO_VPNN_49
+
 
 
 
